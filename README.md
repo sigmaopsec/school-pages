@@ -53,3 +53,7 @@ Follow-up verification: Chromium and iPhone WebKit passed at 320, 390, 767, 1024
 - **Primal Nutrition**: supplied English content in `docs/exercises/primal-1.html`. Listed after PuG because the user identifies it as older; its sort timestamp is a relative ordering seed, not a known original publication date. Source HTML is preserved locally. Google Fonts requests and browser theme storage were removed; light mode starts fresh on reload. A return link and mobile navigation/layout fixes keep it usable from the directory.
 
 Primal integration passed Chromium and iPhone WebKit at 320, 390, 768 and 1440px: card order, Politik date, name/subject search, page opening, mobile menu, accordion, theme switching/reload and return link. No browser storage calls, cookies, external requests or console/JavaScript errors occurred.
+
+PuG revised edition: 6 learning areas, 30 examples and 30 tasks. Replaces the previous edition at the same URL; card date and addition order are preserved. The supplied original is kept only in ignored `inbox/`.
+
+Revised PuG verification: Chromium and iPhone WebKit passed all 18 topic/stage entry routes at 320, 390, 768 and 1440px, answer checking, reading settings and reload reset, and return navigation. No overflow, storage calls, cookies, external requests or JavaScript errors. All three embedded content datasets match the revised supplied file.
