@@ -1,0 +1,3705 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="data:,">
+<title>Primal Nutrition — Return to Ancestral Eating</title>
+<style>
+/* ========== THEME DEFINITIONS ========== */
+[data-theme="dark"] {
+  --bg-primary: #0a0a0b;
+  --bg-secondary: #111113;
+  --card-bg: rgba(22, 22, 26, 0.7);
+  --card-bg-alt: rgba(28, 28, 33, 0.8);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --text-primary: #e8e6e1;
+  --text-muted: #9f9b93;
+  --text-dim: #5e5b55;
+  --accent: #c8875a;
+  --accent-light: #daa06d;
+  --accent-lighter: #e8c49a;
+  --danger: #d94f4f;
+  --danger-bg: rgba(217,79,79,0.08);
+  --danger-border: rgba(217,79,79,0.25);
+  --warning: #d4982a;
+  --warning-bg: rgba(212,152,42,0.08);
+  --warning-border: rgba(212,152,42,0.25);
+  --success: #3a9d6a;
+  --success-bg: rgba(58,157,106,0.08);
+  --success-border: rgba(58,157,106,0.25);
+  --info: #5b8fd9;
+  --info-bg: rgba(91,143,217,0.08);
+  --info-border: rgba(91,143,217,0.25);
+  --nav-bg: rgba(10, 10, 11, 0.75);
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.4);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 30px rgba(200,135,90,0.15);
+  --accent-bg: rgba(200,135,90,0.12);
+  --accent-border: rgba(200,135,90,0.3);
+  --table-header-bg: rgba(28, 28, 33, 0.9);
+  --table-row-even: rgba(255,255,255,0.02);
+  --table-row-hover: rgba(255,255,255,0.04);
+  --tooltip-bg: rgba(28, 28, 33, 0.95);
+  --scroll-track: #16161a;
+  --code-bg: rgba(255,255,255,0.05);
+  --gradient-text-from: #daa06d;
+  --gradient-text-to: #e8c49a;
+  --divider-color: rgba(200,135,90,0.2);
+  --fat-stroke: #e8e6e1;
+  --fat-atom: #e8e6e1;
+  --circadian-bg: rgba(22, 22, 26, 0.6);
+  --circadian-border: rgba(255, 255, 255, 0.08);
+  --circadian-text: #e8e6e1;
+  --circadian-dim: #5e5b55;
+  --circadian-sleep: rgba(91,143,217,0.15);
+  --circadian-melatonin: #7b6fd9;
+  --circadian-cortisol: #d4982a;
+}
+
+[data-theme="light"] {
+  --bg-primary: #fdfcf9;
+  --bg-secondary: #f7f3ed;
+  --card-bg: rgba(255, 255, 255, 0.6);
+  --card-bg-alt: rgba(250, 249, 246, 0.7);
+  --card-border: rgba(160, 102, 58, 0.1);
+  --text-primary: #2a2824;
+  --text-muted: #5a5750;
+  --text-dim: #9a978f;
+  --accent: #a0663a;
+  --accent-light: #c8875a;
+  --accent-lighter: #daa06d;
+  --danger: #c23b3b;
+  --danger-bg: rgba(194,59,59,0.06);
+  --danger-border: rgba(194,59,59,0.2);
+  --warning: #b8821a;
+  --warning-bg: rgba(184,130,26,0.06);
+  --warning-border: rgba(184,130,26,0.2);
+  --success: #2d8255;
+  --success-bg: rgba(45,130,85,0.06);
+  --success-border: rgba(45,130,85,0.2);
+  --info: #4273b8;
+  --info-bg: rgba(66,115,184,0.06);
+  --info-border: rgba(66,115,184,0.2);
+  --nav-bg: rgba(253, 252, 249, 0.8);
+  --shadow-sm: 0 2px 4px rgba(160,102,58,0.05);
+  --shadow-md: 0 8px 24px rgba(160,102,58,0.08);
+  --shadow-lg: 0 16px 48px rgba(160,102,58,0.12);
+  --shadow-glow: 0 0 30px rgba(160,102,58,0.1);
+  --accent-bg: rgba(160,102,58,0.08);
+  --accent-border: rgba(160,102,58,0.2);
+  --table-header-bg: rgba(247, 243, 237, 0.9);
+  --table-row-even: rgba(160,102,58,0.02);
+  --table-row-hover: rgba(160,102,58,0.04);
+  --tooltip-bg: rgba(255, 255, 255, 0.95);
+  --scroll-track: #f7f3ed;
+  --code-bg: rgba(160,102,58,0.04);
+  --gradient-text-from: #a0663a;
+  --gradient-text-to: #c8875a;
+  --divider-color: rgba(160,102,58,0.2);
+  --fat-stroke: #2a2824;
+  --fat-atom: #2a2824;
+  --circadian-bg: rgba(255, 255, 255, 0.6);
+  --circadian-border: rgba(160, 102, 58, 0.1);
+  --circadian-text: #2a2824;
+  --circadian-dim: #9a978f;
+  --circadian-sleep: rgba(66,115,184,0.1);
+  --circadian-melatonin: #6358c0;
+  --circadian-cortisol: #b8821a;
+}
+
+/* ========== BASE RESET & GLOBALS ========== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  font-weight: 400;
+  transition: background 0.4s cubic-bezier(0.4,0,0.2,1), color 0.4s cubic-bezier(0.4,0,0.2,1);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ========== BACKGROUND ANIMATED SHAPES ========== */
+.bg-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-shapes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.01;
+  z-index: 1;
+}
+
+[data-theme="light"] .bg-shapes::before {
+  opacity: 0.04;
+}
+
+.bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.08;
+  animation: float 25s infinite alternate ease-in-out;
+}
+
+[data-theme="light"] .bg-shape {
+  opacity: 0.12;
+  filter: blur(140px);
+}
+
+.shape-1 {
+  width: 50vw;
+  height: 50vw;
+  background: var(--accent);
+  top: -15%;
+  left: -15%;
+  animation-duration: 35s;
+}
+
+.shape-2 {
+  width: 45vw;
+  height: 45vw;
+  background: var(--info);
+  bottom: -10%;
+  right: -10%;
+  animation-duration: 40s;
+  animation-delay: -7s;
+}
+
+.shape-3 {
+  width: 35vw;
+  height: 35vw;
+  background: var(--warning);
+  top: 30%;
+  left: 50%;
+  animation-duration: 30s;
+  animation-delay: -12s;
+}
+
+.shape-4 {
+  width: 40vw;
+  height: 40vw;
+  background: var(--success);
+  top: 60%;
+  left: -10%;
+  animation-duration: 38s;
+  animation-delay: -3s;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  100% { transform: translate(5%, 5%) rotate(10deg) scale(1.1); }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+a:hover {
+  color: var(--accent-light);
+}
+
+img { max-width: 100%; }
+
+strong { font-weight: 700; }
+
+em { font-style: italic; }
+
+p { margin-bottom: 1rem; }
+
+ul, ol {
+  padding-left: 1.5em;
+  margin-bottom: 1rem;
+}
+
+li { margin-bottom: 0.4rem; }
+
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  background: var(--accent-bg);
+  border-radius: 0 12px 12px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/* ========== SCROLL PROGRESS BAR ========== */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-lighter));
+  z-index: 10001;
+  transition: width 0.1s linear;
+}
+
+/* ========== NAVIGATION ========== */
+.navbar {
+  position: fixed;
+  top: 2px;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: var(--nav-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--card-border);
+  transition: background 0.4s cubic-bezier(0.4,0,0.2,1), border-color 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.nav-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.nav-links .nav-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--accent-bg);
+  border-radius: 8px;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.2s ease;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  /* Ensure it doesn't affect layout */
+  width: 0;
+}
+
+.nav-links li {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  transition: color 0.3s cubic-bezier(0.4,0,0.2,1);
+  white-space: nowrap;
+  display: block;
+  position: relative; /* Ensure z-index works */
+  z-index: 2; /* Place text above indicator */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle, .hamburger {
+  background: none;
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover, .hamburger:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--nav-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid var(--card-border);
+    gap: 0.2rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* ========== BACK TO TOP BUTTON ========== */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-lighter));
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ========== SCROLL REVEAL ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== SECTION HEADERS ========== */
+.chapter-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.section-heading {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-intro {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .section-heading { font-size: 2.2rem; }
+  .section-intro { font-size: 1.05rem; }
+}
+
+/* ========== CARD SYSTEM ========== */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 2.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  /* Use a pseudo-element for the blur to keep text sharp */
+  z-index: 1;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: -1;
+  border-radius: 24px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  border-color: var(--accent-border);
+}
+
+.card h3, .card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-accent { border-left: 4px solid var(--accent); }
+.card-danger { border-left: 4px solid var(--danger); }
+.card-warning { border-left: 4px solid var(--warning); }
+.card-success { border-left: 4px solid var(--success); }
+.card-info { border-left: 4px solid var(--info); }
+
+/* ========== STATS GRID ========== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.stat:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+  border-color: var(--accent-border);
+}
+
+.stat:hover::before {
+  opacity: 1;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.stat-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.stat-label {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ========== NUMBERED STEPS ========== */
+.steps {
+  counter-reset: step-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.step {
+  counter-increment: step-counter;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.8rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.step:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--accent-border);
+}
+
+.step::before {
+  content: counter(step-counter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-lighter));
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(200, 135, 90, 0.3);
+}
+
+.step-content h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.step-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* ========== CALLOUT BOXES ========== */
+.callout {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.8rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+}
+
+.callout:hover {
+  transform: scale(1.01);
+}
+
+.callout-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.callout-content {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.callout-content p:last-child { margin-bottom: 0; }
+
+.callout-accent { background: var(--accent-bg); border: 1px solid var(--accent-border); }
+.callout-danger { background: var(--danger-bg); border: 1px solid var(--danger-border); }
+.callout-warning { background: var(--warning-bg); border: 1px solid var(--warning-border); }
+.callout-info { background: var(--info-bg); border: 1px solid var(--info-border); }
+
+/* ========== FEATURE BOX ========== */
+.feature-box {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 3rem;
+  margin: 2.5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.feature-box p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.feature-box-compact {
+  padding: 2rem 2.5rem;
+  text-align: left;
+}
+
+.feature-box-compact p {
+  font-size: 1.1rem;
+}
+
+/* ========== TABLE ========== */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table-wrap th {
+  background: var(--table-header-bg);
+  font-weight: 600;
+  text-align: left;
+  padding: 1.2rem;
+  border-bottom: 1px solid var(--card-border);
+  white-space: nowrap;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.table-wrap td {
+  padding: 1.1rem 1.2rem;
+  border-bottom: 1px solid var(--card-border);
+  vertical-align: top;
+}
+
+.table-wrap tr:last-child td {
+  border-bottom: none;
+}
+
+.table-wrap tr:nth-child(even) td {
+  background: var(--table-row-even);
+}
+
+.table-wrap tr:hover td {
+  background: var(--table-row-hover);
+}
+
+/* ========== ACCORDIONS ========== */
+details {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  margin-bottom: 1rem;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+details[open] {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-sm), var(--shadow-glow);
+  transform: scale(1.005);
+}
+
+summary {
+  padding: 1.4rem 1.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+/* Morphing Icon */
+.icon-morph {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-morph::before,
+.icon-morph::after {
+  content: '';
+  position: absolute;
+  background: var(--text-dim);
+  border-radius: 2px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Horizontal line */
+.icon-morph::before {
+  width: 100%;
+  height: 2px;
+}
+
+/* Vertical line */
+.icon-morph::after {
+  width: 2px;
+  height: 100%;
+}
+
+details[open] summary .icon-morph {
+  transform: rotate(180deg);
+}
+
+details[open] summary .icon-morph::before {
+  background: var(--accent);
+}
+
+details[open] summary .icon-morph::after {
+  transform: rotate(90deg);
+  opacity: 0;
+  background: var(--accent);
+}
+
+summary:hover { color: var(--accent); }
+summary:hover .icon-morph::before,
+summary:hover .icon-morph::after {
+  background: var(--accent);
+}
+
+/* Smooth Content Animation */
+details .details-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 1.8rem;
+  overflow: hidden; /* Ensure content is clipped during animation */
+}
+
+details[open] .details-content {
+  grid-template-rows: 1fr;
+  padding-bottom: 1.8rem;
+}
+
+.details-inner {
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  min-height: 0; /* Crucial for grid animation */
+}
+
+/* ========== TOOLTIPS ========== */
+.term {
+  color: var(--accent);
+  border-bottom: 1px dashed var(--accent);
+  cursor: help;
+  display: inline;
+}
+
+.tooltip-element {
+  position: fixed;
+  background: var(--tooltip-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  white-space: normal;
+  width: max-content;
+  max-width: 300px;
+  box-shadow: var(--shadow-lg);
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -90%) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* ========== BADGES ========== */
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.badge-danger {
+  background: var(--danger-bg);
+  color: var(--danger);
+  border: 1px solid var(--danger-border);
+}
+
+.badge-warning {
+  background: var(--warning-bg);
+  color: var(--warning);
+  border: 1px solid var(--warning-border);
+}
+
+.badge-success {
+  background: var(--success-bg);
+  color: var(--success);
+  border: 1px solid var(--success-border);
+}
+
+.badge-info {
+  background: var(--info-bg);
+  color: var(--info);
+  border: 1px solid var(--info-border);
+}
+
+.badge-accent {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+}
+
+/* ========== TIMELINE BARS ========== */
+.timeline-bar {
+  margin-bottom: 1rem;
+}
+
+.timeline-bar-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-bar-label span:last-child {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.timeline-bar-track {
+  height: 14px;
+  background: var(--scroll-track);
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+
+.timeline-bar-fill {
+  height: 100%;
+  border-radius: 7px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-lighter));
+  transition: width 1.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+.timeline-bar-fill.long { width: 98%; }
+.timeline-bar-fill.short { width: 4%; }
+.timeline-bar-fill.tiny { width: 0.8%; min-width: 4px; }
+
+/* ========== DIVIDER ========== */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--divider-color), transparent);
+  margin: 3rem 0;
+  border: none;
+}
+
+/* ========== FAT MOLECULE ANIMATIONS ========== */
+@keyframes gentlePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+@keyframes gentleSway {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(0.5deg); }
+  75% { transform: rotate(-0.5deg); }
+}
+
+@keyframes dangerousWiggle {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-1px, 0.5px) rotate(-0.5deg); }
+  20% { transform: translate(1px, -0.5px) rotate(0.5deg); }
+  30% { transform: translate(-0.5px, 1px) rotate(-0.3deg); }
+  40% { transform: translate(1px, -0.5px) rotate(0.5deg); }
+  50% { transform: translate(-1px, 0.5px) rotate(-0.5deg); }
+  60% { transform: translate(0.5px, -1px) rotate(0.3deg); }
+  70% { transform: translate(-1px, 0.5px) rotate(-0.5deg); }
+  80% { transform: translate(1px, 0px) rotate(0.4deg); }
+  90% { transform: translate(-0.5px, -0.5px) rotate(-0.3deg); }
+}
+
+.fat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.fat-card {
+  text-align: center;
+}
+
+.fat-card .card {
+  height: 100%;
+}
+
+.fat-diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  min-height: 120px;
+  perspective: 1000px;
+}
+
+.fat-diagram svg {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+.fat-diagram-saturated svg {
+  animation: gentlePulse 4s ease-in-out infinite;
+}
+
+.fat-diagram-mono svg {
+  animation: gentleSway 5s ease-in-out infinite;
+}
+
+.fat-diagram-poly svg {
+  animation: dangerousWiggle 0.4s ease-in-out infinite;
+}
+
+.fat-sources {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.fat-explanation {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin: 0.8rem 0 0.5rem;
+  line-height: 1.6;
+}
+
+/* ========== RUMINANT DIAGRAM ========== */
+.ruminant-diagram {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.ruminant-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== CIRCADIAN DIAGRAM ========== */
+.circadian-wrap {
+  background: var(--circadian-bg);
+  border: 1px solid var(--circadian-border);
+  border-radius: 18px;
+  padding: 2rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.circadian-wrap svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ========== HERO ========== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 1.5rem 5rem;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, var(--accent-bg) 0%, transparent 70%);
+  opacity: 0.4;
+  pointer-events: none;
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.hero-epigraph {
+  background: linear-gradient(135deg, var(--accent-bg), transparent);
+  border: 1px solid var(--accent-border);
+  border-radius: 14px;
+  padding: 1.2rem 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-epigraph::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-lighter));
+}
+
+.hero-epigraph .epigraph-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.hero-epigraph .epigraph-note {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--gradient-text-from), var(--gradient-text-to));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-lighter));
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero { padding-top: 6rem; }
+}
+
+/* ========== GLOSSARY ========== */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.glossary-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.2rem;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.glossary-item:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.glossary-term {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.glossary-def {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-top: 1px solid var(--card-border);
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+/* ========== UTILITY ========== */
+.mb-0 { margin-bottom: 0 !important; }
+.mb-1 { margin-bottom: 1rem !important; }
+.mb-2 { margin-bottom: 2rem !important; }
+.mb-3 { margin-bottom: 3rem !important; }
+.mt-1 { margin-top: 1rem !important; }
+.mt-2 { margin-top: 2rem !important; }
+.text-muted { color: var(--text-muted); }
+.text-small { font-size: 0.88rem; }
+
+/* ========== COUNTER-ARGUMENTS GRID ========== */
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.counter-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.counter-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.counter-card-red { border-top: 4px solid var(--danger); }
+.counter-card-blue { border-top: 4px solid var(--info); }
+.counter-card-green { border-top: 4px solid var(--success); }
+
+.counter-card-red:hover { border-color: var(--danger); box-shadow: 0 10px 30px rgba(217, 79, 79, 0.15); }
+.counter-card-blue:hover { border-color: var(--info); box-shadow: 0 10px 30px rgba(91, 143, 217, 0.15); }
+.counter-card-green:hover { border-color: var(--success); box-shadow: 0 10px 30px rgba(58, 157, 106, 0.15); }
+
+.counter-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.counter-card-icon {
+  font-size: 2rem;
+}
+
+.counter-card h4 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.objection-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  border-left: 3px solid var(--accent-border);
+}
+
+.rebuttal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rebuttal-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.rebuttal-list li::before {
+  content: '⚡';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.counter-cta {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--accent-bg);
+  border-radius: 20px;
+  border: 1px dashed var(--accent-border);
+}
+
+.counter-cta p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--accent-light);
+}
+/* Hosting integration: system fonts, touch targets and a return link. */
+.site-home{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.theme-toggle,.hamburger{min-width:44px;min-height:44px;flex-shrink:0}
+.nav-links.open{max-height:calc(100dvh - 64px);overflow-y:auto}
+.nav-links a{min-height:44px;display:flex;align-items:center}
+.nav-brand:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:480px){.glossary-grid,.counter-grid{grid-template-columns:minmax(0,1fr)}.navbar-inner{padding-inline:16px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress"></div>
+
+<!-- Navigation -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar-inner">
+    <a class="nav-brand site-home" href="../" aria-label="Alle Lernräume">← Lernräume</a>
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-indicator" id="navIndicator" aria-hidden="true"></li>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#evolution">Evolution</a></li>
+      <li><a href="#agriculture">Agriculture</a></li>
+      <li><a href="#fibre">Fibre</a></li>
+      <li><a href="#toxins">Toxins</a></li>
+      <li><a href="#supplements">Supplements</a></li>
+      <li><a href="#sun">Sun</a></li>
+      <li><a href="#acrylamide">Cooking</a></li>
+      <li><a href="#guide">Guide</a></li>
+      <li><a href="#counter-arguments">Counter-Arguments</a></li>
+      <li><a href="#discussion">Discussion</a></li>
+      <li><a href="#glossary">Glossary</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Background Animated Shapes -->
+<div class="bg-shapes">
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
+  <div class="bg-shape shape-4"></div>
+</div>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero" class="hero">
+  <div class="hero-content reveal">
+    <div class="hero-badge">🔬 Evidence-Based Ancestral Nutrition</div>
+
+    <div class="hero-epigraph">
+      <p class="epigraph-quote">"Being stressed is always unhealthy."</p>
+      <p class="epigraph-note">Chronic stress disrupts circadian rhythms, impairs digestion, and drives metabolic dysfunction — the silent foundation of nearly every modern disease.</p>
+    </div>
+
+    <h1>Your Body Is a <span class="gradient-text">3-Million-Year-Old</span> Machine</h1>
+    <p class="hero-subtitle">We explore what humans evolved to eat, why modern diets fail us, and the measurable costs of abandoning our ancestral nutrition. All technical terms are explained inline and in the glossary below.</p>
+    <div class="hero-buttons">
+      <a href="#evolution" class="btn btn-primary">🦴 Explore the Evidence</a>
+      <a href="#guide" class="btn btn-secondary">📋 Practical Guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EVOLUTION ==================== -->
+<section id="evolution">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 1</div>
+      <h2 class="section-heading">🧬 Our Evolutionary Story</h2>
+      <p class="section-intro">The Stone Age lasted approximately 3.3 million years. During this time, humans ate wild animals, fish, organs, roots, tubers, nuts, berries, and seasonal fruits. Our bodies evolved for this.</p>
+    </div>
+
+    <div class="card card-accent reveal">
+      <h3>📅 The Calendar Metaphor</h3>
+      <p>If we compress 3.3 million years of human evolution into <strong>one calendar year</strong> — from January 1st to December 31st — we can see just how recent our dietary changes really are. The entire history of hunting and gathering spans from Day 1 through Day 364. Agriculture begins in the last 24 hours. Industrial seed oils appear in the last 20 minutes of December 31st.</p>
+    </div>
+
+    <div class="reveal">
+      <div class="timeline-bar">
+        <div class="timeline-bar-label">
+          <span>🥩 Hunting &amp; Gathering</span>
+          <span>Days 1–364 (~3.3 million years)</span>
+        </div>
+        <div class="timeline-bar-track">
+          <div class="timeline-bar-fill long"></div>
+        </div>
+      </div>
+
+      <div class="timeline-bar">
+        <div class="timeline-bar-label">
+          <span>🌾 Grain Agriculture</span>
+          <span>Last ~24 hours (~10,000–12,000 years ago)</span>
+        </div>
+        <div class="timeline-bar-track">
+          <div class="timeline-bar-fill short"></div>
+        </div>
+      </div>
+
+      <div class="timeline-bar">
+        <div class="timeline-bar-label">
+          <span>🏭 Industrial Seed Oils</span>
+          <span>Last ~20 minutes (~1900, 1% → 85% of dietary fat)</span>
+        </div>
+        <div class="timeline-bar-track">
+          <div class="timeline-bar-fill tiny"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout-accent reveal">
+      <div class="callout-icon">💡</div>
+      <div class="callout-content">
+        <p class="mb-0">For <strong>364 days</strong> of our evolutionary year, every human on Earth ate diverse whole food — wild animals, fish, organs, roots, nuts, and seasonal fruits. Grain-based diets are an extreme biological novelty.</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p>Every aspect of human physiology developed in response to an animal-based whole-food diet over 3 million+ years. Our stomach acid pH is extremely low (pH 1.5–2), comparable to scavengers — ideal for breaking down meat and bone. Our <span class="term" data-def="A digestive fluid produced by the liver, stored in the gallbladder, essential for fat digestion and absorption. It emulsifies dietary fats into smaller droplets, increasing the surface area for lipase enzymes to break them down into absorbable fatty acids.">bile</span> production is robust and continuous, optimized for digesting animal fats. Our <span class="term" data-def="Proteins that catalyze biochemical reactions. Digestive enzymes like proteases and lipases break down complex food molecules into absorbable nutrients. Without these, food would pass through the gut largely undigested, leading to malabsorption and nutrient deficiencies.">enzyme</span> profiles are dominated by proteases and lipases — enzymes that digest protein and fat. Our intestinal length, jaw structure, and brain size all reflect a diet rich in nutrient-dense animal foods. These adaptations took millions of years to develop and cannot be undone by 10,000 years of agriculture, let alone 120 years of industrial food processing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== AGRICULTURE ==================== -->
+<section id="agriculture">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 2</div>
+      <h2 class="section-heading">🌾 What Changed With Agriculture</h2>
+      <p class="section-intro">Research on skeletal remains before and after the agricultural transition shows consistent negative changes across populations worldwide.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-icon">🦴</div>
+        <div class="stat-value">↓ Density</div>
+        <div class="stat-label">Bone density decreased</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">📏</div>
+        <div class="stat-value">↓ Height</div>
+        <div class="stat-label">Average stature dropped</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">🦷</div>
+        <div class="stat-value">↑ Decay</div>
+        <div class="stat-label">Tooth decay became widespread</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">🧠</div>
+        <div class="stat-value">↓ Jaw Size</div>
+        <div class="stat-label">Jaws narrowed, teeth crowded, overbites appeared</div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <details>
+        <summary>Bone Density Declined <div class="icon-morph"></div></summary>
+        <div class="details-content">
+          <div class="details-inner">
+            <p>Pre-agricultural human skeletons consistently show thicker, denser bones. After the transition to grain-based diets, bone density decreased significantly. This is attributed to reduced mineral intake (particularly calcium, magnesium, and zinc from animal sources), increased phytate consumption from grains which chelates minerals, and reduced physical activity patterns shifting from active hunting to sedentary farming.</p>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Average Height Dropped <div class="icon-morph"></div></summary>
+        <div class="details-content">
+          <div class="details-inner">
+            <p>Hunter-gatherer populations averaged significantly taller stature than early agricultural populations. In some regions, average height dropped by 5–6 inches after the adoption of grain farming. This reflects reduced protein quality and quantity, lower micronutrient density, and increased disease burden. It took thousands of years for average height to partially recover — and in many populations, it never fully did until modern nutrition improved protein access.</p>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Tooth Decay Became Widespread <div class="icon-morph"></div></summary>
+        <div class="details-content">
+          <div class="details-inner">
+            <p>Pre-agricultural humans had virtually no tooth decay. The shift to grain-based diets introduced high levels of fermentable <span class="term" data-def="A broad category of organic compounds including sugars, starches, and fibre. In the context of modern grain-based diets, these are rapidly broken down into glucose, causing blood sugar spikes and feeding acid-producing oral bacteria that erode tooth enamel.">carbohydrates</span> that feed acid-producing oral bacteria. Archaeological studies consistently show dental caries rates below 2% in hunter-gatherers, rising to 10–20% or higher in early farming communities.</p>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Jaw &amp; Skull Structure Changed <div class="icon-morph"></div></summary>
+        <div class="details-content">
+          <div class="details-inner">
+            <p>Hunter-gatherer skulls show broad, well-developed jaws with straight teeth and no <span class="term" data-def="A dental condition where upper front teeth protrude significantly over lower teeth. This is a sign of poor craniofacial development, often caused by nutritional deficiencies (like lack of Vitamin K2) and soft, processed diets that don't require enough chewing force to stimulate jaw growth.">overbite</span>. Post-agricultural skulls show narrowed jaws, crowded teeth, malocclusion, and the appearance of overbites. This is partly due to softer, processed foods requiring less chewing force (reducing jaw development) and partly due to nutritional deficiencies affecting craniofacial growth — particularly deficiencies in vitamins A, D, and K2 which are abundant in animal foods.</p>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SEED OILS DEEP DIVE -->
+    <div class="reveal">
+      <h3 class="section-heading" style="font-size:1.8rem;">🏭 The Seed Oil Problem — Fat Chemistry</h3>
+      <p>For all of human history, dietary fats came from animals and whole plants — butter, tallow, lard, olive oil. <span class="term" data-def="Oils extracted from seeds (soybean, canola, sunflower, corn, cottonseed) using industrial processes: hexane solvent extraction, high-heat pressing, and chemical deodorization. These oils are highly unstable, prone to oxidation, and contain excessive omega-6 fatty acids that drive chronic systemic inflammation.">Industrial seed oils</span> (soybean, canola, sunflower, corn, cottonseed) only entered the food supply around 1900. By the end of the 20th century, seed oils went from approximately <strong>1% to 85%</strong> of added dietary fat. This is the most radical change to the human fat supply in our entire evolutionary history.</p>
+    </div>
+
+    <div class="fat-cards reveal">
+      <div class="fat-card">
+        <div class="card card-success" style="border-left-width:4px;">
+          <h4>Saturated Fat</h4>
+          <div><span class="badge badge-success">✅ STABLE</span></div>
+          <div class="fat-diagram fat-diagram-saturated">
+            <svg width="240" height="80" viewBox="0 0 240 80">
+              <defs>
+                <radialGradient id="grad-sat" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="var(--success)" />
+                  <stop offset="100%" stop-color="#1a4d2e" />
+                </radialGradient>
+                <filter id="glow-sat">
+                  <feGaussianBlur stdDeviation="2" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+              <!-- Straight carbon chain -->
+              <line x1="20" y1="40" x2="220" y2="40" stroke="var(--fat-stroke)" stroke-width="3" opacity="0.3"/>
+              <!-- Carbon atoms -->
+              <circle cx="20" cy="40" r="7" fill="url(#grad-sat)" filter="url(#glow-sat)"/>
+              <circle cx="53" cy="40" r="7" fill="url(#grad-sat)" filter="url(#glow-sat)"/>
+              <circle cx="86" cy="40" r="7" fill="url(#grad-sat)" filter="url(#glow-sat)"/>
+              <circle cx="120" cy="40" r="7" fill="url(#grad-sat)" filter="url(#glow-sat)"/>
+              <circle cx="153" cy="40" r="7" fill="url(#grad-sat)" filter="url(#glow-sat)"/>
+              <circle cx="186" cy="40" r="7" fill="url(#grad-sat)" filter="url(#glow-sat)"/>
+              <circle cx="220" cy="40" r="7" fill="url(#grad-sat)" filter="url(#glow-sat)"/>
+              <!-- Hydrogen atoms -->
+              <g opacity="0.6">
+                <circle cx="36" cy="20" r="4" fill="var(--fat-atom)"/>
+                <circle cx="70" cy="20" r="4" fill="var(--fat-atom)"/>
+                <circle cx="103" cy="20" r="4" fill="var(--fat-atom)"/>
+                <circle cx="136" cy="20" r="4" fill="var(--fat-atom)"/>
+                <circle cx="170" cy="20" r="4" fill="var(--fat-atom)"/>
+                <circle cx="203" cy="20" r="4" fill="var(--fat-atom)"/>
+                <circle cx="36" cy="60" r="4" fill="var(--fat-atom)"/>
+                <circle cx="70" cy="60" r="4" fill="var(--fat-atom)"/>
+                <circle cx="103" cy="60" r="4" fill="var(--fat-atom)"/>
+                <circle cx="136" cy="60" r="4" fill="var(--fat-atom)"/>
+                <circle cx="170" cy="60" r="4" fill="var(--fat-atom)"/>
+                <circle cx="203" cy="60" r="4" fill="var(--fat-atom)"/>
+              </g>
+            </svg>
+          </div>
+          <p class="fat-explanation">No double bonds → straight chain → packs tightly → solid at room temperature → highly resistant to oxidation</p>
+          <p class="fat-sources"><strong>Sources:</strong> Butter, ghee, tallow, lard, coconut oil</p>
+        </div>
+      </div>
+
+      <div class="fat-card">
+        <div class="card card-warning" style="border-left-width:4px;">
+          <h4>Monounsaturated Fat</h4>
+          <div><span class="badge badge-warning">⚠️ MODERATE</span></div>
+          <div class="fat-diagram fat-diagram-mono">
+            <svg width="240" height="80" viewBox="0 0 240 80">
+              <defs>
+                <radialGradient id="grad-mono" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="var(--warning)" />
+                  <stop offset="100%" stop-color="#664d1a" />
+                </radialGradient>
+                <filter id="glow-mono">
+                  <feGaussianBlur stdDeviation="2" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+              <!-- Chain with one kink -->
+              <path d="M20,50 L60,50 L100,50 L130,25 L170,40 L220,40" fill="none" stroke="var(--fat-stroke)" stroke-width="3" opacity="0.3" stroke-linejoin="round"/>
+              <!-- Atoms -->
+              <circle cx="20" cy="50" r="7" fill="url(#grad-mono)" filter="url(#glow-mono)"/>
+              <circle cx="60" cy="50" r="7" fill="url(#grad-mono)" filter="url(#glow-mono)"/>
+              <circle cx="100" cy="50" r="7" fill="url(#grad-mono)" filter="url(#glow-mono)"/>
+              <circle cx="130" cy="25" r="7" fill="url(#grad-mono)" filter="url(#glow-mono)"/>
+              <circle cx="170" cy="40" r="7" fill="url(#grad-mono)" filter="url(#glow-mono)"/>
+              <circle cx="220" cy="40" r="7" fill="url(#grad-mono)" filter="url(#glow-mono)"/>
+              <!-- Double bond marker -->
+              <line x1="105" y1="42" x2="125" y2="23" stroke="var(--warning)" stroke-width="4" opacity="0.8" stroke-linecap="round"/>
+              <!-- Hydrogen atoms -->
+              <g opacity="0.6">
+                <circle cx="40" cy="35" r="4" fill="var(--fat-atom)"/>
+                <circle cx="80" cy="35" r="4" fill="var(--fat-atom)"/>
+                <circle cx="150" cy="20" r="4" fill="var(--fat-atom)"/>
+                <circle cx="195" cy="25" r="4" fill="var(--fat-atom)"/>
+                <circle cx="40" cy="65" r="4" fill="var(--fat-atom)"/>
+                <circle cx="80" cy="65" r="4" fill="var(--fat-atom)"/>
+              </g>
+            </svg>
+          </div>
+          <p class="fat-explanation">One double bond → one kink → cannot pack as tightly → liquid at room temperature → moderately stable</p>
+          <p class="fat-sources"><strong>Sources:</strong> Olive oil, avocado oil, also present in animal fats</p>
+        </div>
+      </div>
+
+      <div class="fat-card">
+        <div class="card card-danger" style="border-left-width:4px;">
+          <h4>Polyunsaturated Fat</h4>
+          <div><span class="badge badge-danger">☠️ UNSTABLE</span></div>
+          <div class="fat-diagram fat-diagram-poly">
+            <svg width="240" height="80" viewBox="0 0 240 80">
+              <defs>
+                <radialGradient id="grad-poly" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="var(--danger)" />
+                  <stop offset="100%" stop-color="#4d1a1a" />
+                </radialGradient>
+                <filter id="glow-poly">
+                  <feGaussianBlur stdDeviation="2" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+              <!-- Chain with multiple kinks -->
+              <path d="M15,40 L45,40 L70,20 L100,45 L130,20 L160,50 L195,40 L225,40" fill="none" stroke="var(--danger)" stroke-width="3" opacity="0.3" stroke-linejoin="round"/>
+              <!-- Atoms -->
+              <circle cx="15" cy="40" r="7" fill="url(#grad-poly)" filter="url(#glow-poly)"/>
+              <circle cx="45" cy="40" r="7" fill="url(#grad-poly)" filter="url(#glow-poly)"/>
+              <circle cx="70" cy="20" r="7" fill="url(#grad-poly)" filter="url(#glow-poly)"/>
+              <circle cx="100" cy="45" r="7" fill="url(#grad-poly)" filter="url(#glow-poly)"/>
+              <circle cx="130" cy="20" r="7" fill="url(#grad-poly)" filter="url(#glow-poly)"/>
+              <circle cx="160" cy="50" r="7" fill="url(#grad-poly)" filter="url(#glow-poly)"/>
+              <circle cx="195" cy="40" r="7" fill="url(#grad-poly)" filter="url(#glow-poly)"/>
+              <circle cx="225" cy="40" r="7" fill="url(#grad-poly)" filter="url(#glow-poly)"/>
+              <!-- Double bond markers -->
+              <line x1="50" y1="35" x2="65" y2="23" stroke="var(--danger)" stroke-width="4" opacity="0.8" stroke-linecap="round"/>
+              <line x1="105" y1="40" x2="125" y2="23" stroke="var(--danger)" stroke-width="4" opacity="0.8" stroke-linecap="round"/>
+              <line x1="135" y1="25" x2="155" y2="45" stroke="var(--danger)" stroke-width="4" opacity="0.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="fat-explanation">Multiple double bonds → multiple kinks → cannot pack at all → always liquid → highly prone to oxidation → creates toxic aldehydes</p>
+          <p class="fat-sources"><strong>Sources:</strong> Seed oils (soybean, canola, sunflower, corn, safflower), also fish oil</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-box reveal">
+      <p>"If it's natural and solid at room temperature, it's most likely healthy. Saturated fats are solid at room temperature."</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>Why Seed Oils Are Specifically Problematic</h3>
+      <ul>
+        <li><strong>Industrial extraction process:</strong> Hexane solvent extraction, high-heat pressing, chemical deodorization to mask rancidity — these are industrial chemical processes, not food preparation.</li>
+        <li><strong>Already oxidized before consumption:</strong> The extraction process itself damages the polyunsaturated fats. By the time you consume them, they're already rancid — the deodorization step simply masks the smell and taste of spoilage.</li>
+        <li><strong>Omega-6 overload:</strong> The ancestral omega-6 to omega-3 ratio was approximately 1:1. The modern diet, dominated by seed oils, pushes this ratio to 20:1 or higher — a dramatic pro-inflammatory shift.</li>
+        <li><strong><span class="term" data-def="An omega-6 polyunsaturated fatty acid (18:2n-6). The primary fatty acid in seed oils. It incorporates directly into cell membranes, where it disrupts cellular signaling, increases oxidative stress, and drives chronic systemic inflammation.">Linoleic acid</span> incorporation:</strong> Linoleic acid from seed oils incorporates directly into cell membranes, where it drives chronic systemic inflammation, disrupts cellular signaling, and creates oxidized lipid metabolites.</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-danger reveal">
+      <div class="callout-icon">⚠️</div>
+      <div class="callout-content">
+        <p class="mb-0"><strong>Summary:</strong> Human biology was shaped by millions of years of whole, wild, nutrient-dense food. Skeletal and dental evidence from the agricultural transition shows weaker bones, shorter stature, smaller jaws, and widespread decay. Seed oils are the most recent and potentially most damaging addition to the human diet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FIBRE ==================== -->
+<section id="fibre">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 3</div>
+      <h2 class="section-heading">🌿 The Fibre Myth</h2>
+      <p class="section-intro">One of the most entrenched beliefs in modern nutrition. The evidence does not support the certainty with which fibre is promoted.</p>
+    </div>
+
+    <div class="card card-accent reveal">
+      <h3>What Fibre Actually Is</h3>
+      <p><span class="term" data-def="Indigestible plant structural carbohydrates (cellulose, hemicellulose, pectin) that pass through the human digestive system largely intact. Humans lack the enzymes to break down these complex plant cell wall structures, meaning they provide no nutritional value and can cause significant digestive distress in sensitive individuals.">Fibre</span> cannot be digested by the human body. This is a fundamental biochemical fact. Plant cell walls are built with <span class="term" data-def="A chemical bond linking glucose molecules in a configuration that human digestive enzymes cannot recognize or break. Found in cellulose and other plant structural carbohydrates. This bond is the reason humans cannot digest plant cell walls.">beta-glycosidic bonds</span> — and human digestive enzymes can only recognize and cleave <span class="term" data-def="A chemical bond linking glucose molecules in a configuration that human digestive enzymes CAN recognize and break. Found in starch and glycogen, which are the primary energy storage forms in animals and plants.">alpha-glycosidic bonds</span>. This isn't a minor limitation — it's a fundamental biochemical incompatibility.</p>
+      <p>There are two types: <strong>soluble fibre</strong> (which gut bacteria can partially metabolize, producing short-chain fatty acids) and <strong>insoluble fibre</strong> (which passes through the entire digestive tract essentially unchanged — bulk roughage). The claim that humans "need" a substance they cannot digest deserves scrutiny.</p>
+    </div>
+
+    <div class="card card-warning reveal">
+      <h3>Gas, Bloating &amp; Digestive Discomfort</h3>
+      <p>Insoluble fibre passes undigested to the large intestine, where gut bacteria attempt to <span class="term" data-def="A metabolic process where microorganisms break down organic substances in the absence of oxygen. In the human gut, bacterial fermentation of undigested fibre produces gases (hydrogen, methane, carbon dioxide) and short-chain fatty acids. This process is the primary cause of bloating and gas in high-fibre diets.">ferment</span> it. This fermentation produces gases — hydrogen, methane, and carbon dioxide. The result: bloating, abdominal cramping, constipation, and diarrhea. For people with <span class="term" data-def="Fermentable Oligosaccharides, Disaccharides, Monosaccharides And Polyols — a group of short-chain carbohydrates that are poorly absorbed in the small intestine. In sensitive individuals, these compounds are rapidly fermented by gut bacteria, causing severe bloating, gas, and abdominal pain.">FODMAP</span> sensitivity or irritable bowel conditions, high fibre intake can be actively harmful.</p>
+      <blockquote>"Bloating, abdominal pain, and excess gas are all common consequences of increasing fiber intake." — Rekha Chaudhary, MD</blockquote>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-icon">💨</div>
+        <div class="stat-value">15–20%</div>
+        <div class="stat-label">of high-fibre dieters have pronounced gaseous symptoms</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">📈</div>
+        <div class="stat-value">+41%</div>
+        <div class="stat-label">increase in bloating risk on high-fibre DASH diet (412 participants, 12 weeks)</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">😣</div>
+        <div class="stat-value">55%</div>
+        <div class="stat-label">of IBS patients worsened from bran; only 10% benefited</div>
+      </div>
+    </div>
+
+    <div class="card card-danger reveal">
+      <h3>Reduced Nutrient &amp; Mineral Absorption</h3>
+      <p>Fibre impairs mineral absorption through two distinct mechanisms. First, <strong>physical entrapment</strong> — nutrients become trapped within the fibre matrix and pass through the gut before they can be absorbed. Second, <strong>chemical binding</strong> — <span class="term" data-def="The storage form of phosphorus in plants. It strongly binds to essential minerals like iron, zinc, calcium, and magnesium, forming insoluble complexes (phytates) that the human body cannot absorb. This is a primary cause of mineral deficiencies in grain-heavy diets.">phytates</span> and <span class="term" data-def="Organic acids found in many plants (spinach, rhubarb, beets) that bind calcium and other minerals, forming insoluble crystals (calcium oxalate). These crystals can accumulate in the kidneys as stones and cause tissue damage throughout the body.">oxalates</span> in fibre-rich foods form insoluble complexes with essential minerals, rendering them unavailable for absorption.</p>
+      <p>Research shows that high-fibre diets contained <strong>3× more phytate</strong> and approximately <strong>4× more oxalate</strong> than moderate-fibre diets — directly reducing mineral <span class="term" data-def="The proportion of a nutrient that is absorbed from the diet and utilized by the body for normal physiological functions. Animal-source nutrients (like heme iron) are generally far more bioavailable than plant-source equivalents (like non-heme iron), which are often bound by anti-nutrients.">bioavailability</span>.</p>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Mineral</th>
+            <th>Effect of High Fibre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Calcium</strong></td>
+            <td>Reduced absorption and serum levels; oxalates form insoluble calcium oxalate</td>
+          </tr>
+          <tr>
+            <td><strong>Zinc</strong></td>
+            <td>&lt;10% absorption with untreated wheat bran; 25% when phytic acid was reduced</td>
+          </tr>
+          <tr>
+            <td><strong>Iron</strong></td>
+            <td>Some fibre-rich foods significantly reduce non-heme iron absorption</td>
+          </tr>
+          <tr>
+            <td><strong>Magnesium</strong></td>
+            <td>Binding by fibre reduces bioavailability; phytates chelate magnesium ions</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout-warning reveal">
+      <div class="callout-icon">💡</div>
+      <div class="callout-content">
+        <p class="mb-0">If your digestive system works well on a low-fibre animal-based diet and you feel better without grains, legumes, and roughage — that is <strong>valid biological feedback</strong>, not a deficiency. Your body is telling you something. Listen to it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PLANT TOXINS ==================== -->
+<section id="toxins">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 4</div>
+      <h2 class="section-heading">☠️ Plant Defense Chemicals</h2>
+      <p class="section-intro">Plants can't run, fight, or hide. Their primary defense is chemical warfare — toxins designed to discourage, sicken, or kill animals that eat them.</p>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Chemical</th>
+            <th>Found In</th>
+            <th>Symptoms &amp; Effects</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><span class="term" data-def="A toxic glycoalkaloid found in nightshade plants (potatoes, tomatoes, peppers). It is heat-stable, meaning it is not destroyed by standard cooking methods, and can cause nausea, vomiting, diarrhea, and neurological symptoms.">Solanine</span> <span class="badge badge-danger">Glycoalkaloid</span></td>
+            <td>Nightshades (potatoes, tomatoes, eggplant, peppers)</td>
+            <td>Nausea, vomiting, diarrhea, cardiac issues, neurological symptoms. Heat-stable — cooking does not destroy it.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><span class="term" data-def="A glycoalkaloid found primarily in potatoes, especially those that are green or sprouted. It is more toxic than solanine and has a very long half-life (21–44 hours) in the body, which allows it to accumulate to dangerous levels with repeated consumption.">Chaconine</span> <span class="badge badge-danger">Glycoalkaloid</span></td>
+            <td>Potatoes (especially green/sprouted)</td>
+            <td>Accumulative toxicity due to 21–44 hour <span class="term" data-def="The time required for half of a substance to be eliminated from the body. A longer half-life means the substance stays in the system longer, increasing the risk of accumulation and chronic toxicity with repeated exposure.">half-life</span>. More toxic than solanine. GI distress, neurological effects.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><span class="term" data-def="Carbohydrate-binding proteins found in many plants, especially legumes and grains. They bind to the intestinal lining, causing inflammation and increased permeability (leaky gut), and can cause the clumping (agglutination) of red blood cells, which can obstruct small blood vessels.">Lectins</span>/PHA <span class="badge badge-danger">Toxic protein</span></td>
+            <td>Kidney beans, soybeans, potatoes, grains</td>
+            <td><span class="term" data-def="The clumping together of red blood cells caused by certain proteins (lectins). This clumping can obstruct small blood vessels, impairing circulation and causing tissue damage.">Agglutination</span> of red blood cells. As few as 4–5 raw kidney beans can cause severe illness. GI inflammation, intestinal permeability.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><span class="term" data-def="Organic acids found in many plants (spinach, rhubarb, beets, Swiss chard, almonds) that bind calcium and other minerals, forming insoluble crystals (calcium oxalate). These crystals can accumulate in the kidneys as stones, cause joint pain, and damage tissues throughout the body.">Oxalates</span> <span class="badge badge-warning">Chelating antinutrient</span></td>
+            <td>Spinach, rhubarb, beets, Swiss chard, almonds</td>
+            <td>Kidney stones (calcium oxalate), tissue crystal deposits, joint pain, reduced mineral absorption.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><span class="term" data-def="Plant compounds that release hydrogen cyanide (HCN) when plant tissue is damaged (e.g., by chewing or processing). Hydrogen cyanide is a potent respiratory toxin that inhibits cellular respiration, leading to convulsions, respiratory failure, and death. Chronic low-dose exposure can cause neurological damage like tropical ataxic neuropathy.">Cyanogenic glycosides</span> <span class="badge badge-danger">Cyanide-releasing</span></td>
+            <td>Cassava, bamboo shoots, lima beans, flaxseed</td>
+            <td>Release hydrogen cyanide. Convulsions, respiratory failure, death. Chronic low-dose: tropical ataxic neuropathy.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><span class="term" data-def="Sulfur-containing compounds in cruciferous vegetables that can interfere with thyroid hormone synthesis by inhibiting iodine uptake.">Glucosinolates</span> <span class="badge badge-warning">Thyroid disruptor</span></td>
+            <td>Broccoli, kale, cabbage, Brussels sprouts, cauliflower</td>
+            <td>Thyroid dysfunction, <span class="term" data-def="Enlargement of the thyroid gland, often caused by iodine deficiency or consumption of goitrogenic compounds.">goiter</span> formation, interference with iodine uptake.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><span class="term" data-def="Substances that suppress thyroid function by interfering with iodine uptake or thyroid hormone synthesis.">Goitrogens</span> <span class="badge badge-warning">Thyroid disruptor</span></td>
+            <td>Cruciferous vegetables, soy, millet</td>
+            <td>Suppressed thyroid function, <span class="term" data-def="A condition where the thyroid gland doesn't produce enough thyroid hormones. Symptoms include fatigue, weight gain, cold intolerance, brain fog.">hypothyroidism</span>, enlarged thyroid.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><span class="term" data-def="The storage form of phosphorus in plants. Strongly binds iron, zinc, calcium, and magnesium, making them unavailable for absorption.">Phytic acid</span> <span class="badge badge-warning">Mineral chelator</span></td>
+            <td>Legumes, grains, seeds, nuts</td>
+            <td>Iron and zinc deficiency. Binds minerals in digestive tract, forming insoluble complexes excreted without absorption.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Tannins <span class="badge badge-info">Polyphenol</span></td>
+            <td>Legumes, sorghum, berries, tea, wine</td>
+            <td>Reduced protein digestibility (precipitates proteins), decreased iron absorption, astringent taste as deterrent signal.</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><span class="term" data-def="Plant glycosides that produce foam when dissolved in water. Can disrupt cell membranes and lyse (destroy) red blood cells.">Saponins</span> <span class="badge badge-danger">Membrane disruptor</span></td>
+            <td>Legumes, quinoa, spinach, oats</td>
+            <td><span class="term" data-def="The rupturing of red blood cells, releasing hemoglobin. Can be caused by saponins, certain toxins, and other membrane-disrupting compounds.">Haemolysis</span> of red blood cells, intestinal membrane disruption, increased gut permeability.</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Protease Inhibitors <span class="badge badge-warning">Enzyme blocker</span></td>
+            <td>Soybeans, lentils, chickpeas, raw eggs</td>
+            <td>Reduced protein digestion, pancreatic hypertrophy (enlarged pancreas from overproduction of enzymes).</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Sulforaphane <span class="badge badge-warning">Isothiocyanate</span></td>
+            <td>Broccoli, Brussels sprouts, kale</td>
+            <td>Mitochondrial damage, Nrf2 activation through cellular stress (hormesis), thyroid disruption at high doses.</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td><span class="term" data-def="Highly toxic alkaloids found in certain plants and contaminating weeds. Cause irreversible liver damage (veno-occlusive disease) and are genotoxic (damage DNA).">Pyrrolizidine alkaloids</span> <span class="badge badge-danger">Genotoxic</span></td>
+            <td>Contaminating weeds, herbal teas (comfrey, coltsfoot), honey</td>
+            <td>DNA damage, liver veno-occlusive disease, genotoxic and carcinogenic. Cumulative — no safe chronic dose.</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>α-Tomatine <span class="badge badge-danger">Glycoalkaloid</span></td>
+            <td>Tomatoes (especially green/unripe)</td>
+            <td><span class="term" data-def="The quality of being toxic to cells. Cytotoxic substances can damage or kill cells through various mechanisms.">Cytotoxicity</span>, cell membrane disruption, hemolytic activity. Higher in green tomatoes.</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td><span class="term" data-def="Plant-derived compounds that mimic estrogen in the body. Can disrupt hormonal balance, affect fertility, and interfere with endocrine function.">Phytoestrogens</span> <span class="badge badge-danger">Endocrine disruptor</span></td>
+            <td>Soy (isoflavones), flaxseed (lignans)</td>
+            <td>Hormonal disruption, altered sexual development, reduced fertility. 60% of known anti-fertility plants contain phytoestrogens.</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Amylase Inhibitors <span class="badge badge-warning">Enzyme blocker</span></td>
+            <td>Beans, wheat, rice</td>
+            <td>Blocked starch digestion, bloating, gas, malabsorption. Reduce caloric extraction from starches.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Heavy Metals -->
+    <div class="reveal">
+      <h3 class="section-heading" style="font-size:1.6rem; margin-top:2rem;">🏭 Heavy Metal Contamination</h3>
+      <p>Many vegetables accumulate <span class="term" data-def="Dense metallic elements toxic at low concentrations. Include lead, cadmium, arsenic, and mercury. Accumulate in soil from industrial pollution, fertilizers, and atmospheric deposition.">heavy metals</span> from soil, water, and atmospheric deposition. Root vegetables and leafy greens are particularly efficient accumulators.</p>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Metal</th>
+            <th>High-Risk Foods</th>
+            <th>Health Effects</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Lead (Pb)</strong> <span class="badge badge-danger">☠️</span></td>
+            <td>Leafy greens, root vegetables, rice</td>
+            <td>Irreversible neurotoxicity, no safe exposure level, accumulates in bones for decades, developmental damage in children.</td>
+          </tr>
+          <tr>
+            <td><strong>Cadmium (Cd)</strong> <span class="badge badge-danger">☠️</span></td>
+            <td>Spinach, lettuce, potatoes, rice</td>
+            <td>Renal dysfunction, bone demineralization (<span class="term" data-def="'Ouch-ouch disease' — cadmium poisoning causing severe bone softening and kidney damage. First documented in Japan.">Itai-itai disease</span>), IARC Group 1 carcinogen, 10–30 year half-life in the body.</td>
+          </tr>
+          <tr>
+            <td><strong>Arsenic (As)</strong> <span class="badge badge-danger">☠️</span></td>
+            <td>Rice (absorbs 10× more than other grains), root vegetables</td>
+            <td>IARC Group 1 carcinogen, skin lesions, cardiovascular disease, developmental effects, bladder cancer.</td>
+          </tr>
+          <tr>
+            <td><strong>Mercury (Hg)</strong> <span class="badge badge-danger">☠️</span></td>
+            <td>Rice, leafy greens, mushrooms</td>
+            <td><span class="term" data-def="Neurological syndrome caused by severe mercury poisoning. Named after Minamata Bay, Japan. Causes ataxia, numbness, vision/hearing loss, and death.">Minamata disease</span>, neurological damage, kidney failure, crosses blood-brain barrier.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout-danger reveal">
+      <div class="callout-icon">🥩</div>
+      <div class="callout-content">
+        <p class="mb-0"><strong>Contrast with animal foods:</strong> 3 million+ years of consumption, <span class="term" data-def="The proportion of a nutrient that is absorbed and utilized by the body. Animal-source nutrients are generally far more bioavailable than plant-source equivalents.">bioavailable</span> nutrients, complete proteins containing all <span class="term" data-def="Amino acids the body cannot synthesize and must obtain from diet. All 9 essential amino acids are present in animal proteins; most plant proteins are deficient in one or more.">essential amino acids</span>, no anti-nutrients, no defense chemicals evolved to harm the consumer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SUPPLEMENTS ==================== -->
+<section id="supplements">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 5</div>
+      <h2 class="section-heading">💊 The Supplement Problem</h2>
+      <p class="section-intro">Many people try to compensate for poor diet with supplements. Understanding toxicity profiles and the industry behind them reveals why "food first" is more than a slogan.</p>
+    </div>
+
+    <div class="card card-danger reveal">
+      <h3>⚠️ Conflict of Interest</h3>
+      <p>The same parent corporations that manufacture prescription medications also produce dietary supplements. If supplements truly resolved the nutritional deficiencies driving chronic disease, pharmaceutical divisions would lose customers. This isn't conspiracy — it's structural incentive misalignment. Approach supplement industry claims with the same critical thinking you'd apply to any industry that profits from your continued purchasing.</p>
+    </div>
+
+    <div class="reveal">
+      <p><strong><span class="term" data-def="Lethal Dose 50% — the dose of a substance required to kill 50% of a test population. Standard measure of acute toxicity. Lower LD50 = more toxic.">LD50</span> (Lethal Dose, 50%)</strong> is the standard measure of acute toxicity — the dose required to kill 50% of test animals. All values listed are oral administration in rats, in milligrams per kilogram of body weight.</p>
+    </div>
+
+    <div class="callout callout-danger reveal">
+      <div class="callout-icon">🔬</div>
+      <div class="callout-content">
+        <p class="mb-0"><strong>Critical distinction:</strong> The substances with LD50 values listed below are <em>synthetic laboratory chemicals</em> — sodium selenite, cholecalciferol, ferrous sulfate, cyanocobalamin — <strong>NOT</strong> natural food-form nutrients. Your body handles synthetic isolates fundamentally differently from nutrients embedded in their natural food matrix.</p>
+      </div>
+    </div>
+
+    <div class="card card-danger reveal">
+      <h3>Relative Toxicity Ranking — Most to Least Toxic</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Substance</th>
+              <th>LD50 (mg/kg)</th>
+              <th>Danger Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Selenium (Na Selenite)</td>
+              <td>~7</td>
+              <td><span class="badge badge-danger">☠️ Highly toxic</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Vitamin D3 (Cholecalciferol)</td>
+              <td>~37–44</td>
+              <td><span class="badge badge-danger">☠️ Used as rodenticide</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Vitamin D2 (Ergocalciferol)</td>
+              <td>~56</td>
+              <td><span class="badge badge-warning">⚠️ Toxic</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Copper Sulfate</td>
+              <td>~300</td>
+              <td><span class="badge badge-warning">⚠️ Moderately toxic</span></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Iron (Ferrous Sulfate)</td>
+              <td>~320</td>
+              <td><span class="badge badge-warning">⚠️ Moderately toxic</span></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Zinc Sulfate</td>
+              <td>~350–600</td>
+              <td><span class="badge badge-warning">⚠️ Moderately toxic</span></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Manganese Chloride</td>
+              <td>~1,715</td>
+              <td><span class="badge badge-info">Low toxicity</span></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Vitamin A (Retinol)</td>
+              <td>~2,000</td>
+              <td><span class="badge badge-info">Low toxicity</span></td>
+            </tr>
+            <tr>
+              <td>9+</td>
+              <td>Most other nutrients</td>
+              <td>&gt;2,000–&gt;10,000</td>
+              <td><span class="badge badge-success">Practically non-toxic</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="feature-box reveal">
+      <p>"All of these substances have an LD50 value, which means they are toxic. Even a little bit toxic is not optimal."</p>
+    </div>
+
+    <div class="reveal">
+      <details>
+        <summary>Macronutrients &amp; Fatty Acids — LD50 Values <div class="icon-morph"></div></summary>
+        <div class="details-content">
+          <div class="details-inner">
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Substance</th><th>LD50 (mg/kg)</th><th>Notes</th></tr></thead>
+                <tbody>
+                  <tr><td>Creatine</td><td>&gt;2,000</td><td>Practically non-toxic</td></tr>
+                  <tr><td>EPA</td><td>&gt;5,000</td><td>Very low toxicity</td></tr>
+                  <tr><td>DHA</td><td>&gt;5,000</td><td>Very low toxicity</td></tr>
+                  <tr><td>ALA (Alpha-linolenic acid)</td><td>&gt;5,000 est.</td><td>Estimated very low toxicity</td></tr>
+                  <tr><td>GLA (Gamma-linolenic acid)</td><td>&gt;5,000 est.</td><td>Estimated very low toxicity</td></tr>
+                  <tr><td>Linoleic Acid</td><td>&gt;5,000 est.</td><td>Low acute toxicity but chronic inflammatory effects</td></tr>
+                  <tr><td>Oleic Acid</td><td>~25,000</td><td>Very low toxicity</td></tr>
+                  <tr><td>CLA</td><td>&gt;5,000 est.</td><td>Estimated very low toxicity</td></tr>
+                  <tr><td>MCTs</td><td>&gt;5,000 est.</td><td>Well tolerated acutely</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>Fat-Soluble Vitamins — LD50 Values <div class="icon-morph"></div></summary>
+          <div class="details-content">
+            <div class="details-inner">
+              <table>
+                <thead><tr><th>Vitamin</th><th>LD50 (mg/kg)</th><th>Notes</th></tr></thead>
+                <tbody>
+                  <tr><td>Vitamin A (Retinol)</td><td>~2,000</td><td>Acute hypervitaminosis A possible</td></tr>
+                  <tr><td>Vitamin D2 (Ergocalciferol)</td><td>~56</td><td>Quite toxic — hypercalcemia</td></tr>
+                  <tr><td>Vitamin D3 (Cholecalciferol)</td><td>~37–44</td><td>Most toxic common vitamin; used as rat poison</td></tr>
+                  <tr><td>Vitamin E (α-Tocopherol)</td><td>&gt;4,000–7,000</td><td>Low acute toxicity</td></tr>
+                  <tr><td>Vitamin K1 (Phylloquinone)</td><td>&gt;25,000</td><td>Extremely low toxicity</td></tr>
+                  <tr><td>Vitamin K2 (MK-4)</td><td>&gt;2,000</td><td>Low toxicity</td></tr>
+                  <tr><td>Vitamin K2 (MK-7)</td><td>&gt;2,000</td><td>Low toxicity</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+
+          <details>
+            <summary>Water-Soluble Vitamins — LD50 Values <div class="icon-morph"></div></summary>
+            <div class="details-content">
+              <table>
+                <thead><tr><th>Vitamin</th><th>LD50 (mg/kg)</th><th>Notes</th></tr></thead>
+                <tbody>
+                  <tr><td>B1 (Thiamine)</td><td>~3,710</td><td>Low toxicity</td></tr>
+                  <tr><td>B2 (Riboflavin)</td><td>&gt;10,000</td><td>Practically non-toxic</td></tr>
+                  <tr><td>B3 (Niacin)</td><td>~7,000</td><td>Low toxicity; flushing at high doses</td></tr>
+                  <tr><td>B5 (Pantothenic Acid)</td><td>~10,000</td><td>Practically non-toxic</td></tr>
+                  <tr><td>B6 (Pyridoxine)</td><td>~4,000</td><td>Chronic high doses cause neuropathy</td></tr>
+                  <tr><td>B7 (Biotin)</td><td>&gt;10,000</td><td>Practically non-toxic</td></tr>
+                  <tr><td>B9 (Folic Acid)</td><td>~10,000</td><td>Low toxicity; synthetic form differs from folate</td></tr>
+                  <tr><td>B12 (Cyanocobalamin)</td><td>&gt;5,000</td><td>Very low toxicity</td></tr>
+                  <tr><td>Vitamin C (Ascorbic Acid)</td><td>~11,900</td><td>Very low toxicity</td></tr>
+                  <tr><td>Choline</td><td>~3,400</td><td>Low-moderate toxicity</td></tr>
+                </tbody>
+              </table>
+            </details>
+
+            <details>
+              <summary>Minerals &amp; Electrolytes — LD50 Values <div class="icon-morph"></div></summary>
+              <div class="details-content">
+                <table>
+                  <thead><tr><th>Mineral</th><th>LD50 (mg/kg)</th><th>Notes</th></tr></thead>
+                  <tbody>
+                    <tr><td>Calcium Carbonate</td><td>~6,450</td><td>Low toxicity</td></tr>
+                    <tr><td>Magnesium (Oxide/Citrate)</td><td>~5,000</td><td>Low toxicity; laxative effect at high doses</td></tr>
+                    <tr><td>Potassium Chloride</td><td>~2,500</td><td>Can cause hyperkalemia</td></tr>
+                    <tr><td>Iron (Ferrous Sulfate)</td><td>~320</td><td>Moderately toxic; #1 cause of child poisoning deaths from supplements</td></tr>
+                    <tr><td>Zinc Sulfate</td><td>~350–600</td><td>Moderately toxic</td></tr>
+                    <tr><td>Copper Sulfate</td><td>~300</td><td>Moderately toxic</td></tr>
+                    <tr><td>Manganese Chloride</td><td>~1,715</td><td>Low toxicity</td></tr>
+                    <tr><td>Selenium (Na Selenite)</td><td>~7</td><td>Highly toxic — most dangerous common supplement mineral</td></tr>
+                    <tr><td>Chromium (Picolinate)</td><td>&gt;5,000</td><td>Low toxicity in trivalent form</td></tr>
+                    <tr><td>Iodine (KI)</td><td>~2,779</td><td>Low toxicity</td></tr>
+                    <tr><td>Molybdenum (Na Molybdate)</td><td>~4,000</td><td>Low toxicity</td></tr>
+                    <tr><td>Boron (Boric Acid)</td><td>~2,660</td><td>Low toxicity</td></tr>
+                    <tr><td>Silicon (Dioxide)</td><td>&gt;5,000</td><td>Very low toxicity</td></tr>
+                    <tr><td>Sodium (Chloride)</td><td>~3,000</td><td>Low toxicity</td></tr>
+                    <tr><td>Phosphate (Na Phosphate)</td><td>~7,400</td><td>Low toxicity</td></tr>
+                  </tbody>
+                </table>
+              </details>
+            </details>
+          </details>
+        </details>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SUN ==================== -->
+<section id="sun">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 6</div>
+      <h2 class="section-heading">☀️ Sun Exposure &amp; Circadian Health</h2>
+      <p class="section-intro">For millions of years humans lived outdoors. Our biology depends on sunlight. Modern indoor living has severed one of the most fundamental inputs to human health.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-icon">☀️</div>
+        <div class="stat-value">30 min/day</div>
+        <div class="stat-label">Minimum sun with legs exposed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">📊</div>
+        <div class="stat-value">9,000 ng/dL</div>
+        <div class="stat-label">Target vitamin D3 level</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">🌅</div>
+        <div class="stat-value">Morning</div>
+        <div class="stat-label">Anchor circadian rhythm with early light</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">🔄</div>
+        <div class="stat-value">Metabolism</div>
+        <div class="stat-label">Sun essential for sugar processing</div>
+      </div>
+    </div>
+
+    <div class="card card-accent reveal">
+      <h3>☀️ Vitamin D3 — The Sun Hormone</h3>
+      <p>Vitamin D3 is not actually a vitamin — it's a <strong>secosteroid hormone</strong>. When UVB radiation strikes your skin, it triggers the synthesis of cholecalciferol (vitamin D3). This hormone influences over <strong>1,000 genes</strong>, modulates immune function, regulates calcium metabolism, affects mood and cognition, and supports muscle function.</p>
+      <p>You need a minimum of <strong>30 minutes of direct sunlight daily with your legs exposed</strong>. Legs represent the largest continuous skin surface and are the most efficient site for vitamin D synthesis. Supplements are not equivalent to natural sun-derived D3 — the body's endogenous production includes regulatory feedback mechanisms that prevent toxicity, which oral supplementation bypasses.</p>
+    </div>
+
+    <div class="card card-info reveal">
+      <h3>🔬 Sun &amp; Sugar Metabolism</h3>
+      <p>UV exposure enhances insulin sensitivity and improves glucose metabolism <strong>independently of vitamin D levels</strong>. Nitric oxide released from sun-exposed skin improves blood vessel dilation and blood flow. Without adequate sun exposure, the pathway toward insulin resistance → metabolic syndrome → type 2 diabetes is accelerated. This is one reason why metabolic disease rates are highest in populations living farthest from the equator and spending the most time indoors.</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>🕐 Circadian Rhythm — Your Biological Clock</h3>
+      <p>Every cell in your body runs on an approximately 24-hour <span class="term" data-def="The ~24-hour internal clock that governs sleep-wake cycles, hormone release, body temperature, and metabolism. Synchronized primarily by light exposure.">circadian rhythm</span>, synchronized primarily by light entering your eyes. Morning sunlight — containing the specific wavelengths of red, orange, and blue light present at sunrise — is the most powerful anchor for this system.</p>
+      <ul>
+        <li><strong>Cortisol timing:</strong> Healthy morning spike provides alertness and energy; circadian disruption flattens this curve</li>
+        <li><strong>Melatonin regulation:</strong> Morning light exposure → stronger nighttime melatonin production → deeper, more restorative sleep</li>
+        <li><strong>Mood &amp; cognition:</strong> Light-driven serotonin production directly affects mental clarity and emotional stability</li>
+        <li><strong>Metabolic synchronization:</strong> Meal timing, digestive enzyme secretion, fat metabolism — all regulated by circadian signals</li>
+      </ul>
+      <blockquote>"The single most impactful thing for sleep quality, energy, and metabolic health is getting outside within the first hour of waking and exposing your eyes to natural sunlight for 10–30 minutes. No sunglasses."</blockquote>
+    </div>
+
+    <div class="card card-danger reveal">
+      <h3>🌑 The Blue Light Plague</h3>
+      <p>While morning sun anchors your rhythm, modern artificial light destroys it. Screens (phones, laptops, TVs) and LED bulbs emit high concentrations of <strong>blue light</strong>. This specific wavelength signals the brain that it is high noon, immediately suppressing <span class="term" data-def="A hormone produced by the pineal gland that regulates sleep-wake cycles and acts as a powerful antioxidant.">melatonin</span> production.</p>
+      <div class="callout callout-warning">
+        <div class="callout-icon">📱</div>
+        <div class="callout-content">
+          <p class="mb-0"><strong>The 2-Hour Rule:</strong> For multiple hours before bed, you must eliminate screen exposure. Even a few minutes of scrolling can delay melatonin release by hours, causing sleep quality to crater even if you manage to fall asleep.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CIRCADIAN INFOGRAPHIC -->
+    <div class="circadian-wrap reveal">
+      <svg viewBox="0 0 800 340" width="800" height="340" xmlns="http://www.w3.org/2000/svg" style="min-width:600px;">
+        <!-- Background regions -->
+        <!-- Sleep zone 10pm-6am = x:666 to x:800 + x:0 to x:200 -->
+        <rect x="667" y="40" width="133" height="240" rx="0" fill="var(--circadian-sleep)" opacity="0.7"/>
+        <rect x="0" y="40" width="200" height="240" rx="0" fill="var(--circadian-sleep)" opacity="0.7"/>
+
+        <!-- Morning sun zone 6am-8am -->
+        <rect x="200" y="40" width="67" height="240" fill="var(--accent-bg)" opacity="0.8"/>
+
+        <!-- Midday UVB zone 10am-2pm -->
+        <rect x="333" y="40" width="133" height="240" fill="var(--warning-bg)" opacity="0.6"/>
+
+        <!-- Evening wind down 7pm-10pm -->
+        <rect x="567" y="40" width="100" height="240" fill="var(--code-bg)" opacity="0.5"/>
+
+        <!-- Axis line -->
+        <line x1="0" y1="280" x2="800" y2="280" stroke="var(--card-border)" stroke-width="1"/>
+
+        <!-- Time labels -->
+        <text x="0" y="300" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="11">12am</text>
+        <text x="100" y="300" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="11">3am</text>
+        <text x="200" y="300" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11" font-weight="600">6am</text>
+        <text x="300" y="300" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="11">9am</text>
+        <text x="400" y="300" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="11">12pm</text>
+        <text x="500" y="300" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="11">3pm</text>
+        <text x="600" y="300" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="11">6pm</text>
+        <text x="700" y="300" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="11">9pm</text>
+
+        <!-- Melatonin curve (high at night, drops in morning) -->
+        <path d="M0,120 C30,100 70,80 100,70 C130,62 150,70 200,200 C230,260 300,270 400,270 C500,270 560,270 600,265 C650,250 680,200 700,130 C720,90 750,75 800,120"
+          fill="none" stroke="var(--circadian-melatonin)" stroke-width="2.5" stroke-dasharray="6,3" opacity="0.8"/>
+
+        <!-- Cortisol curve (peaks in morning, declines) -->
+        <path d="M0,240 C50,245 100,250 150,250 C180,245 200,180 220,100 C235,70 250,65 270,80 C300,110 350,150 400,180 C450,200 500,220 550,235 C600,245 650,250 700,255 C750,258 800,260 800,260"
+          fill="none" stroke="var(--circadian-cortisol)" stroke-width="2.5" opacity="0.8"/>
+
+        <!-- Zone labels -->
+        <text x="210" y="60" fill="var(--accent)" font-family="Inter, sans-serif" font-size="9" font-weight="700">🌅 CIRCADIAN ANCHOR</text>
+        <text x="345" y="60" fill="var(--warning)" font-family="Inter, sans-serif" font-size="9" font-weight="700">☀️ PEAK UVB — VIT D SYNTHESIS</text>
+        <text x="575" y="60" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="9" font-weight="600">🌇 WIND DOWN</text>
+
+        <!-- Sleep labels -->
+        <text x="50" y="165" fill="var(--info)" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">DEEP</text>
+        <text x="50" y="180" fill="var(--info)" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">SLEEP</text>
+        <text x="733" y="165" fill="var(--info)" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">SLEEP</text>
+
+        <!-- Meal markers -->
+        <line x1="250" y1="265" x2="250" y2="280" stroke="var(--success)" stroke-width="2"/>
+        <circle cx="250" cy="264" r="3" fill="var(--success)"/>
+        <text x="250" y="258" fill="var(--success)" font-family="Inter, sans-serif" font-size="8" text-anchor="middle">MEAL</text>
+
+        <line x1="420" y1="265" x2="420" y2="280" stroke="var(--success)" stroke-width="2"/>
+        <circle cx="420" cy="264" r="3" fill="var(--success)"/>
+        <text x="420" y="258" fill="var(--success)" font-family="Inter, sans-serif" font-size="8" text-anchor="middle">MEAL</text>
+
+        <!-- Legend -->
+        <line x1="20" y1="325" x2="45" y2="325" stroke="var(--circadian-melatonin)" stroke-width="2.5" stroke-dasharray="6,3"/>
+        <text x="50" y="329" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11">Melatonin</text>
+
+        <line x1="140" y1="325" x2="165" y2="325" stroke="var(--circadian-cortisol)" stroke-width="2.5"/>
+        <text x="170" y="329" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11">Cortisol</text>
+
+        <rect x="250" y="319" width="12" height="12" rx="2" fill="var(--circadian-sleep)" opacity="0.7"/>
+        <text x="267" y="329" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11">Sleep Window</text>
+
+        <circle cx="370" cy="325" r="3" fill="var(--success)"/>
+        <text x="378" y="329" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11">Optimal Meal</text>
+      </svg>
+    </div>
+
+    <div class="callout callout-accent reveal">
+      <div class="callout-icon">☀️</div>
+      <div class="callout-content">
+        <p class="mb-0"><strong>Practical minimum:</strong> 30 minutes of direct sunlight daily with legs exposed. Morning sun within the first hour of waking. No sunglasses during morning light exposure. Your ancestors spent the entire day outdoors — 30 minutes is the absolute bare minimum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WATER QUALITY ==================== -->
+<section id="water">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 7</div>
+      <h2 class="section-heading">💧 Water Quality</h2>
+      <p class="section-intro">Ancestral humans drank from springs, rivers, and streams — mineral-rich and uncontaminated. Modern municipal water is a chemical cocktail.</p>
+    </div>
+
+    <div class="card card-warning reveal">
+      <h3>⚠️ The Tap Water Problem</h3>
+      <p>Modern municipal water contains chlorine, fluoride, microplastics, pharmaceutical residues, and heavy metals. If we are returning to ancestral inputs, water cannot be ignored. Pollution of water sources is a major underappreciated health threat.</p>
+      <ul>
+        <li><strong>Chlorine:</strong> Added to kill bacteria, but also disrupts your gut microbiome.</li>
+        <li><strong>Fluoride:</strong> A neurotoxin added to water supplies. Accumulates in the pineal gland and bones.</li>
+        <li><strong>Microplastics:</strong> Found in over 90% of bottled water and significant amounts of tap water.</li>
+        <li><strong>Pharmaceuticals:</strong> Trace amounts of antibiotics, hormones, and antidepressants are routinely found in city water.</li>
+      </ul>
+    </div>
+
+    <div class="card card-success reveal">
+      <h3>✅ The Solution</h3>
+      <p><strong>Spring Water:</strong> The gold standard. Naturally filtered by the earth, structured, and rich in essential minerals like magnesium and calcium.</p>
+      <p><strong>Reverse Osmosis (RO):</strong> If spring water isn't accessible, use a high-quality Reverse Osmosis filter to remove contaminants. <em>Crucial:</em> You must add minerals (sea salt or electrolyte drops) back into RO water, as the filtration process strips everything.</p>
+      <div class="callout callout-danger">
+        <div class="callout-icon">🚫</div>
+        <div class="callout-content">
+          <p class="mb-0"><strong>Avoid Plastic Bottles:</strong> Plastic leaches <span class="term" data-def="Endocrine-disrupting chemicals found in plastics (like BPA and phthalates) that mimic estrogen in the body.">xenoestrogens</span> into the water, especially when heated. Use glass or stainless steel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLEEP & RECOVERY ==================== -->
+<section id="sleep">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 8</div>
+      <h2 class="section-heading">😴 Sleep &amp; Recovery</h2>
+      <p class="section-intro">Sleep is the body's primary repair and detoxification window. No amount of optimal nutrition compensates for chronic sleep deprivation.</p>
+    </div>
+
+    <div class="card card-info reveal">
+      <h3>🧠 The Glymphatic System</h3>
+      <p>During deep sleep, the <span class="term" data-def="A macroscopic waste clearance system that utilizes a unique system of perivascular tunnels to promote efficient elimination of soluble proteins and metabolites from the central nervous system.">glymphatic system</span> activates — a brain waste-clearance pathway that flushes metabolic debris, including amyloid-beta proteins. This system is <strong>almost entirely inactive during waking hours</strong>. Without sufficient deep sleep, toxic waste accumulates nightly, contributing to neurodegeneration and brain fog.</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>Ancestral Sleep Patterns</h3>
+      <p>Ancestral humans slept in sync with natural light — winding down after sunset and waking at sunrise. Artificial light and stimulants have destroyed this rhythm. See the <a href="#sun">Sun &amp; Circadian Health</a> chapter for details on how blue light destroys sleep quality.</p>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-icon">🌑</div>
+          <div class="stat-value">Darkness</div>
+          <div class="stat-label">Total blackout required</div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">❄️</div>
+          <div class="stat-value">Cool</div>
+          <div class="stat-label">16-19°C (60-67°F)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">🔇</div>
+          <div class="stat-value">Quiet</div>
+          <div class="stat-label">Silence or white noise</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GROUNDING ==================== -->
+<section id="grounding">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 9</div>
+      <h2 class="section-heading">🌍 Grounding &amp; Earthing</h2>
+      <p class="section-intro">For our entire evolution, we were in continuous electrical contact with the earth. Modern life has insulated us.</p>
+    </div>
+
+    <div class="card card-accent reveal">
+      <h3>⚡ The Physics of Grounding</h3>
+      <p>The Earth carries a mild negative charge. Your body accumulates a positive charge (free radicals, oxidative stress) through metabolism and modern exposures (EMFs, synthetic materials). <strong>Skin-to-ground contact transfers free electrons from the earth into your body.</strong></p>
+      <p>These free electrons act as natural antioxidants, neutralizing positive charge. This isn't esoteric — it's basic physics. A grounded body has a measurably different electrical potential than an ungrounded one. Modern humans wearing rubber-soled shoes and living in insulated buildings are electrically disconnected 24/7.</p>
+    </div>
+
+    <div class="callout callout-success reveal">
+      <div class="callout-icon">👣</div>
+      <div class="callout-content">
+        <p class="mb-0"><strong>Recommendation:</strong> Spend 15–20 minutes barefoot on grass, soil, or sand daily. Concrete works if it's unsealed; asphalt and wood do not.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ACRYLAMIDE ==================== -->
+<section id="acrylamide">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 7</div>
+      <h2 class="section-heading">🔥 Burned Food &amp; Acrylamide</h2>
+      <p class="section-intro">High-temperature cooking of starchy foods produces acrylamide. Understanding this reaction is critical for reducing toxic burden.</p>
+    </div>
+
+    <div class="card card-danger reveal">
+      <h3>⚠️ The Acrylamide Problem</h3>
+      <p><span class="term" data-def="A chemical compound (C₃H₅NO) formed when starchy foods are heated above ~120°C. Classified as a Group 2A probable carcinogen by IARC. Also used industrially in water treatment and plastics.">Acrylamide</span> forms through the <span class="term" data-def="A chemical reaction between amino acids (particularly asparagine) and reducing sugars at high temperatures. Responsible for browning, flavor development, and acrylamide formation in cooked foods.">Maillard reaction</span> when the amino acid asparagine reacts with reducing sugars at temperatures above approximately 120°C (248°F). The highest-acrylamide foods include:</p>
+      <ul>
+        <li>French fries and potato chips</li>
+        <li>Toast and baked goods</li>
+        <li><strong>Coffee</strong> (the roasting process burns the seeds, creating high acrylamide levels)</li>
+        <li>Breakfast cereals</li>
+        <li>Biscuits and crackers</li>
+      </ul>
+      <p>Acrylamide is classified as an <strong>IARC Group 2A probable carcinogen</strong>. It's the same compound used industrially in water treatment and plastic manufacturing.</p>
+    </div>
+
+    <div class="card card-warning reveal">
+      <h3>☕ The Caffeine &amp; Coffee Trap</h3>
+      <p>Caffeine does not provide energy; it is a <span class="term" data-def="A chemical that interferes with the normal function of the nervous system. Caffeine acts as a neurotoxin by blocking adenosine receptors.">neurotoxin</span> that poisons the body into staying awake by blocking <span class="term" data-def="A chemical in the brain that builds up during the day to signal sleepiness.">adenosine</span> receptors. With a half-life of over <strong>7 hours</strong>, a morning coffee ensures trace amounts are still disrupting your brain at bedtime.</p>
+      <p>Coffee is specifically problematic because the roasting process burns the seeds. Your body detects this "burned" profile as bitter—a natural warning signal for poison. This is why children and young people instinctively reject the taste; adults only "acquire" it through repeated exposure and desensitization.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-icon">🌡️</div>
+        <div class="stat-value">120°C+</div>
+        <div class="stat-label">Temperature threshold for formation</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">⚠️</div>
+        <div class="stat-value">Group 2A</div>
+        <div class="stat-label">IARC carcinogen classification</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">🧠</div>
+        <div class="stat-value">Neurotoxic</div>
+        <div class="stat-label">Nerve damage at sustained exposure</div>
+      </div>
+    </div>
+
+    <div class="card card-warning reveal">
+      <h3>Health Damage Pathways</h3>
+      <ul>
+        <li><strong>Neurological:</strong> Confirmed neurotoxin causing peripheral neuropathy — numbness, tingling, muscle weakness in extremities. Occupational exposure studies confirm dose-dependent nerve damage.</li>
+        <li><strong>Carcinogenic:</strong> Causes tumors in animal studies across multiple organs. Human epidemiological studies associate high acrylamide intake with increased risk of kidney, endometrial, and ovarian cancers.</li>
+        <li><strong>Reproductive:</strong> <span class="term" data-def="A metabolite of acrylamide formed in the body. More reactive than acrylamide itself — binds directly to DNA forming adducts (chemical attachments) that can cause mutations.">Glycidamide</span> (the primary metabolite of acrylamide in the body) binds directly to DNA, forming adducts that can cause mutations and chromosomal damage.</li>
+      </ul>
+    </div>
+
+    <div class="card reveal">
+      <h3>🛡️ Mitigation Strategies</h3>
+      <ul>
+        <li><strong>Cook low and slow</strong> — lower temperatures produce dramatically less acrylamide</li>
+        <li><strong>Boil or steam instead of frying</strong> — water-based cooking stays at 100°C, safely below the 120°C threshold</li>
+        <li><strong>Soak potatoes 15–30 minutes before cooking</strong> — reduces acrylamide by up to 50%</li>
+        <li><strong>Don't refrigerate potatoes</strong> — cold storage converts starch to sugar, increasing acrylamide precursors</li>
+        <li><strong>Don't burn toast</strong> — golden, not brown or black</li>
+        <li><strong>Choose animal foods</strong> — meat, fish, and eggs produce negligible acrylamide even at high temperatures because they contain minimal asparagine + reducing sugar combinations</li>
+      </ul>
+    </div>
+
+    <div class="card card-accent reveal">
+      <h3>🔬 Nutrient Destruction from High-Heat Cooking</h3>
+      <ul>
+        <li><strong>Vitamin C:</strong> Destroyed above 70°C — one of the most heat-sensitive nutrients</li>
+        <li><strong>B vitamins (B1, B5, B9):</strong> Water-soluble and heat-labile; significant losses during high-heat cooking</li>
+        <li><strong>Vitamin E:</strong> Degraded by high heat and oxidation</li>
+        <li><strong>Omega-3 fatty acids:</strong> Oxidize at high temperatures, forming toxic lipid peroxides</li>
+        <li><strong>Enzymes:</strong> Denatured above 45–50°C — all enzymatic activity destroyed</li>
+      </ul>
+      <blockquote>"The irony: the same high-heat cooking that creates toxic compounds simultaneously destroys the beneficial nutrients."</blockquote>
+    </div>
+
+    <div class="callout callout-warning reveal">
+      <div class="callout-icon">🔥</div>
+      <div class="callout-content">
+        <p class="mb-0"><strong>Bottom line:</strong> Cook gently. Rare or medium-rare meat, soft-boiled eggs, gentle steaming. The darker and more charred the food, the more toxins created and fewer nutrients remaining. Animal foods cooked properly produce virtually no acrylamide.</p>
+      </div>
+    </div>
+
+    <div class="card card-danger reveal" style="margin-top:2rem;">
+      <h3>🍺 Alcohol: The Ancestral Verdict</h3>
+      <p>Ethanol is metabolized as a toxin. The liver prioritizes alcohol detoxification above all other metabolic processes — halting fat burning, protein synthesis, and nutrient processing until it is cleared.</p>
+      <ul>
+        <li><strong>Sleep Destroyer:</strong> Even small amounts suppress REM sleep and fragment sleep architecture.</li>
+        <li><strong>Gut Damage:</strong> Increases intestinal permeability ("leaky gut") and depletes B vitamins and magnesium.</li>
+        <li><strong>No Safe Dose:</strong> Fermentation is a post-agricultural invention. There is no ancestral precedent for regular alcohol consumption.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PRACTICAL GUIDE ==================== -->
+<section id="guide">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 8</div>
+      <h2 class="section-heading">📋 Practical Guide</h2>
+      <p class="section-intro">What the evidence and evolutionary logic point toward — practical steps to return to ancestral nutrition.</p>
+    </div>
+
+    <div class="card card-danger card-thick-border reveal">
+      <h3>🚫 Eliminate Seed Oils Completely</h3>
+      <p>This is the single most impactful thing you can do for your health. <strong>All</strong> of these must go: soybean oil, canola/rapeseed oil, sunflower oil, corn oil, safflower oil, cottonseed oil, grapeseed oil, rice bran oil. These oils are extracted using chemical solvents (hexane), subjected to high heat, and chemically deodorized to mask the rancidity that's already present.</p>
+      <p>Their high content of oxidized <span class="term" data-def="An omega-6 polyunsaturated fatty acid. The primary fat in seed oils. Incorporates into cell membranes and drives chronic systemic inflammation.">linoleic acid</span> drives systemic inflammation at every level — from cell membranes to arterial walls.</p>
+      <p><strong>Use ghee or tallow instead</strong> — heat-stable, nutrient-dense, ancestral cooking fats that don't oxidize into toxic aldehydes. Ghee has a smoke point of ~250°C. These are the original cooking fats; seed oils are the substitution, not the other way around.</p>
+      <div class="callout callout-info" style="margin-top:1rem;">
+        <div class="callout-icon">🔬</div>
+        <div class="callout-content">
+          <p class="mb-0">See the molecular instability explained in Chapter 2 above — the animated fat chemistry cards show exactly why polyunsaturated fats are structurally unstable and prone to oxidation, while saturated fats remain inert and safe.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-accent reveal">
+      <h3>🧠 Stop Telling Yourself "A Little Bit Is Fine"</h3>
+      <p>"The dose makes the poison" is misleading when applied to <span class="term" data-def="Oils extracted from the seeds of plants using industrial processes including hexane solvent extraction, high heat, and chemical deodorization.">industrial seed oils</span> and processed food — <strong>the poison makes the poison</strong>. These substances cause harm through mechanisms that don't require a threshold dose:</p>
+      <ul>
+        <li>Cell membranes incorporate seed oil fatty acids directly — changing their structure and function</li>
+        <li>Blood glucose spikes trigger <span class="term" data-def="A chain reaction of inflammatory signaling throughout the body, driven by pro-inflammatory molecules like cytokines and prostaglandins derived from omega-6 fatty acids.">inflammatory cascades</span> every single time — there is no "safe" spike</li>
+        <li>Biology doesn't negotiate with intention or moderation</li>
+      </ul>
+      <p>The "treat" mentality is psychologically destructive — the threshold for what constitutes a "treat" shifts upward constantly. What starts as "occasionally" becomes "weekends" becomes "whenever I feel like it."</p>
+    </div>
+
+    <div class="reveal">
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:1.5rem;">🥩 Nutrient-Dense Foods</h3>
+      <p>Eat the most nutrient-dense foods that exist on Earth:</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-icon">🥩</div>
+        <div class="stat-value">Beef &amp; Lamb</div>
+        <div class="stat-label"><span class="term" data-def="The form of iron found in animal blood and muscle tissue. 15-35% absorbed vs 2-20% for non-heme plant iron. The most bioavailable iron source.">Heme iron</span>, zinc, B12, selenium, complete protein</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">🐟</div>
+        <div class="stat-value">Fish &amp; Seafood</div>
+        <div class="stat-label">Omega-3 <span class="term" data-def="Eicosapentaenoic acid and Docosahexaenoic acid — long-chain omega-3 fatty acids found primarily in fish and seafood. Essential for brain, heart, and immune function.">EPA/DHA</span>, iodine, selenium, vitamin D</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">🥚</div>
+        <div class="stat-value">Eggs</div>
+        <div class="stat-label"><span class="term" data-def="An essential nutrient critical for liver function, brain development, cell membrane integrity, and neurotransmitter synthesis. Most people are deficient.">Choline</span>, vitamins A, D, E, K2, selenium</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">🫀</div>
+        <div class="stat-value">Organ Meats</div>
+        <div class="stat-label">Single most nutrient-dense foods on earth</div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <h3>🫀 Why Organ Meats Are Essential</h3>
+      <p>Liver is the single most nutrient-dense food in existence: vitamin A (<span class="term" data-def="The active, preformed version of vitamin A found only in animal foods. Immediately usable by the body, unlike beta-carotene from plants which requires inefficient conversion.">retinol</span>), B12, folate, copper, iron, <span class="term" data-def="Vitamin B2 — essential for energy production, cellular function, and fat metabolism. Abundant in liver and dairy.">riboflavin</span>, and choline in extraordinary concentrations.</p>
+
+      <div class="callout callout-accent">
+        <div class="callout-icon">🩸</div>
+        <div class="callout-content">
+          <p><strong>Iron &amp; Women's Health:</strong> Women who menstruate lose significant amounts of iron through period blood every month. This makes high-quality <span class="term" data-def="The most bioavailable form of iron, found only in animal tissues.">heme iron</span> intake critical. Most women are chronically deficient, leading to fatigue and impaired immunity; liver is the ultimate solution for restoring these levels.</p>
+          <div class="table-wrap" style="margin-top:1rem; background: rgba(255,255,255,0.05);">
+            <table style="font-size: 0.85rem;">
+              <thead>
+                <tr>
+                  <th>Food (100g)</th>
+                  <th>Total Iron</th>
+                  <th>Absorption Rate</th>
+                  <th>Absorbable Iron</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Beef Liver (Raw)</strong></td>
+                  <td>~6.5 mg</td>
+                  <td>~25-35% (Heme)</td>
+                  <td><strong>~2.0 mg</strong></td>
+                </tr>
+                <tr>
+                  <td>Spinach (Raw)</td>
+                  <td>~2.7 mg</td>
+                  <td>~2-5% (Non-Heme)</td>
+                  <td>~0.08 mg</td>
+                </tr>
+                <tr>
+                  <td>Peas (Raw)</td>
+                  <td>~1.5 mg</td>
+                  <td>~2-5% (Non-Heme)</td>
+                  <td>~0.04 mg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-small mt-1 mb-0"><em>Note: You would need to eat over <strong>2.5kg of spinach</strong> to absorb the same amount of iron found in just 100g of liver.</em></p>
+        </div>
+      </div>
+
+      <div class="callout callout-warning" style="margin:1rem 0;">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-content">
+          <p class="mb-0"><strong>Critical sourcing note:</strong> Only consume liver from <strong>super healthy, grass-fed, pasture-raised cows</strong>. The liver is the body's primary detoxification organ — it filters and processes toxins. Conventionally raised cattle liver can contain residues of antibiotics, growth hormones, and pesticides. Source exclusively from open-pasture, grass-fed farms where you can verify animal welfare and feeding practices.</p>
+        </div>
+      </div>
+      <p><strong>Heart:</strong> Rich in <span class="term" data-def="Coenzyme Q10 — essential for mitochondrial energy production. Concentrated in heart muscle. Levels decline with age and statin drug use.">CoQ10</span>, B vitamins, and highly bioavailable iron. <strong>Kidney:</strong> Concentrated selenium and B12. Even <strong>100–150g per week</strong> of organ meats can correct deficiencies that months of supplementation cannot match.</p>
+
+      <div class="card card-info" style="margin-top:1.5rem;">
+        <h4>🦴 Bone Marrow &amp; Bone Broth</h4>
+        <p>Bone marrow was one of the earliest ancestral foods — tool marks on bones predate <em>Homo sapiens</em>. It is rich in fat-soluble vitamins, collagen precursors (glycine, proline), and healthy fats.</p>
+        <ul>
+          <li><strong>Glycine:</strong> Supports gut lining repair, liver detoxification, and sleep quality.</li>
+          <li><strong>Collagen:</strong> The structural protein for joints, skin, hair, and connective tissue.</li>
+        </ul>
+        <p class="mb-0"><strong>Bone Broth:</strong> Simmering bones for 24+ hours extracts these nutrients into a highly absorbable form. Treat this as essential alongside organ meats.</p>
+      </div>
+    </div>
+
+    <!-- MEAT QUALITY HIERARCHY -->
+    <div class="reveal">
+      <h3 class="section-heading" style="font-size:1.8rem; margin-top:2rem;">🥩 Meat Quality Hierarchy</h3>
+    </div>
+
+    <div class="card card-accent reveal">
+      <h4>A) Ruminant Animal Superiority</h4>
+      <p>Beef, lamb, goat, and bison are <strong>ruminant animals</strong> — they possess a four-chamber stomach that functions as a sophisticated fermentation system.</p>
+      <div class="ruminant-diagram">
+        <svg viewBox="0 0 520 130" width="520" height="130">
+          <!-- Chambers -->
+          <ellipse cx="80" cy="65" rx="55" ry="40" fill="var(--success-bg)" stroke="var(--success)" stroke-width="2"/>
+          <ellipse cx="195" cy="65" rx="40" ry="35" fill="var(--success-bg)" stroke="var(--success)" stroke-width="2"/>
+          <ellipse cx="300" cy="65" rx="38" ry="32" fill="var(--success-bg)" stroke="var(--success)" stroke-width="2"/>
+          <ellipse cx="410" cy="65" rx="45" ry="35" fill="var(--success-bg)" stroke="var(--success)" stroke-width="2"/>
+
+          <!-- Labels -->
+          <text x="80" y="60" text-anchor="middle" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11" font-weight="700">Rumen</text>
+          <text x="80" y="76" text-anchor="middle" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="9">(Fermentation)</text>
+
+          <text x="195" y="60" text-anchor="middle" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11" font-weight="700">Reticulum</text>
+          <text x="195" y="76" text-anchor="middle" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="9">(Filtering)</text>
+
+          <text x="300" y="60" text-anchor="middle" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11" font-weight="700">Omasum</text>
+          <text x="300" y="76" text-anchor="middle" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="9">(Absorption)</text>
+
+          <text x="410" y="60" text-anchor="middle" fill="var(--circadian-text)" font-family="Inter, sans-serif" font-size="11" font-weight="700">Abomasum</text>
+          <text x="410" y="76" text-anchor="middle" fill="var(--circadian-dim)" font-family="Inter, sans-serif" font-size="9">(True stomach)</text>
+
+          <!-- Arrows -->
+          <line x1="135" y1="55" x2="153" y2="55" stroke="var(--accent)" stroke-width="2" marker-end="url(#arrowR)"/>
+          <line x1="235" y1="55" x2="258" y2="55" stroke="var(--accent)" stroke-width="2" marker-end="url(#arrowR)"/>
+          <line x1="338" y1="55" x2="362" y2="55" stroke="var(--accent)" stroke-width="2" marker-end="url(#arrowR)"/>
+
+          <!-- Arrow marker -->
+          <defs>
+            <marker id="arrowR" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="var(--accent)"/>
+            </marker>
+          </defs>
+
+          <!-- Input/output labels -->
+          <text x="10" y="35" fill="var(--text-dim)" font-family="Inter, sans-serif" font-size="9">Feed →</text>
+          <text x="460" y="35" fill="var(--text-dim)" font-family="Inter, sans-serif" font-size="9">→ Digestion</text>
+        </svg>
+      </div>
+      <p>This fermentation-based digestive system <strong>converts low-quality feed into high-quality, nutrient-dense meat</strong>. Even conventionally raised ruminant meat is significantly better than conventional chicken or pork because the four-chamber system effectively filters and converts input quality. Ruminant meat is <strong>always</strong> the top choice.</p>
+    </div>
+
+    <div class="card card-warning reveal">
+      <h4>B) Non-Ruminant Conditional Use</h4>
+      <p>Pork and chicken are <strong>only acceptable if sourced from verified high-quality local farms</strong>. These are single-stomach animals — what they eat directly becomes their tissue composition. Conventional chicken and pork are fed soy, corn, antibiotics, and growth promoters — all of which transfer directly into the meat you consume. If you cannot verify the farm and feed quality, <strong>avoid entirely</strong>.</p>
+    </div>
+
+    <div class="card card-danger reveal">
+      <h4>C) Farmed Fish Warning</h4>
+      <p>Most farmed salmon is fed soy-based feed pellets, resulting in skewed omega-6:omega-3 ratios, incomplete development, and lower vitamin content. <strong>Wild-caught is always preferable.</strong></p>
+      <div class="table-wrap" style="margin-top:1rem;">
+        <table>
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>Wild-Caught</th>
+              <th>Farm-Raised</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Feed source</strong></td>
+              <td>Natural marine diet</td>
+              <td>Soy/corn pellets, fish meal</td>
+            </tr>
+            <tr>
+              <td><strong>Omega-6:3 ratio</strong></td>
+              <td>~1:10 (excellent)</td>
+              <td>~1:3 to 1:4 (compromised)</td>
+            </tr>
+            <tr>
+              <td><strong>Color</strong></td>
+              <td>Natural astaxanthin (deep red)</td>
+              <td>Added synthetic dye</td>
+            </tr>
+            <tr>
+              <td><strong>Nutrient density</strong></td>
+              <td>High vitamin D, selenium</td>
+              <td>Lower across all metrics</td>
+            </tr>
+            <tr>
+              <td><strong>Recommendation</strong></td>
+              <td><span class="badge badge-success">✅ Excellent</span></td>
+              <td><span class="badge badge-danger">❌ Avoid</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card card-accent reveal">
+      <h4>D) Raw vs. Cooked Optimization</h4>
+      <p>🥩 <strong>Primary recommendation: completely raw</strong> — eliminates all cooking-related damage, preserves enzymes, vitamins, and fatty acid integrity in their natural state.</p>
+      <p>🔥 <strong>Secondary:</strong> Light cooking (rare/medium-rare) for those who prefer cooked food or are transitioning.</p>
+      <p>Heat denatures proteins (reducing their biological value), destroys heat-sensitive vitamins (C, B1, B5, B9, E), oxidizes fats creating harmful lipid peroxides, and kills beneficial enzymes that aid digestion. For a detailed explanation of why heavy cooking is harmful, see the <a href="#acrylamide">Burned Food &amp; Acrylamide section</a> above.</p>
+
+      <div class="callout callout-success" style="margin-top:1rem;">
+        <div class="callout-icon">🍊</div>
+        <div class="callout-content">
+          <p class="mb-0"><strong>Vitamin C in Meat?</strong> A common objection is "where's the vitamin C?" The answer is <strong>raw organ meats</strong>. Fresh raw liver and adrenal glands contain meaningful amounts of vitamin C, but it is destroyed above ~70°C. Ancestral humans eating fresh raw organs got adequate vitamin C without plants. Furthermore, on a low-inflammation animal-based diet, your requirement for vitamin C (an antioxidant) is significantly lower than on a high-oxidative-stress grain diet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <h4 style="font-family:'Playfair Display',serif; margin-bottom:1rem;">E) Meat Quality Hierarchy Table</h4>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Tier</th>
+            <th>Source</th>
+            <th>Status</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🥇 Tier 1</td>
+            <td>Grass-fed ruminants (beef, lamb, goat)</td>
+            <td><span class="badge badge-success">✅ Always excellent</span></td>
+            <td>Best choice regardless of context</td>
+          </tr>
+          <tr>
+            <td>🥈 Tier 2</td>
+            <td>Wild-caught fish &amp; seafood</td>
+            <td><span class="badge badge-success">✅ Excellent</span></td>
+            <td>Omega-3 rich, clean, natural diet</td>
+          </tr>
+          <tr>
+            <td>🥉 Tier 3</td>
+            <td>Pasture-raised eggs</td>
+            <td><span class="badge badge-success">✅ Very good</span></td>
+            <td>Choline, fat-soluble vitamins</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Conventional ruminant meat</td>
+            <td><span class="badge badge-warning">⚠️ Acceptable</span></td>
+            <td>Still good due to ruminant digestion</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Verified local-farm pork/chicken</td>
+            <td><span class="badge badge-warning">⚠️ Conditional</span></td>
+            <td>Only if farm and feed verified</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Conventional chicken/pork</td>
+            <td><span class="badge badge-danger">❌ Avoid</span></td>
+            <td>Direct tissue transfer of feed quality</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Farmed fish</td>
+            <td><span class="badge badge-danger">❌ Avoid</span></td>
+            <td>Soy-fed, skewed omega ratios</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="reveal">
+      <h4 style="font-family:'Playfair Display',serif; margin:2rem 0 1rem;">🔧 Nutrient Density for Damage Repair</h4>
+      <p>When you've spent years eating poorly, your body is chronically depleted of essential cofactors. These nutrient pairs work together for repair:</p>
+      <ul>
+        <li><strong>Zinc + Vitamin A:</strong> Immune function, tissue repair, skin and mucous membrane integrity</li>
+        <li><strong>B12 + Folate:</strong> <span class="term" data-def="A biochemical process involving the transfer of methyl groups. Essential for DNA synthesis and repair, detoxification, neurotransmitter production, and gene expression regulation.">Methylation</span>, DNA repair, neurological function</li>
+        <li><strong>Omega-3 (EPA/DHA):</strong> Resolve existing inflammation, restore cell membrane integrity</li>
+        <li><strong>Iron + Copper:</strong> Oxygen transport, energy production (mitochondrial function)</li>
+        <li><strong>Choline:</strong> Liver function, brain health, cell membrane structural integrity</li>
+        <li><strong>Vitamin K2:</strong> Directs calcium into bones and teeth, prevents calcification of soft tissues and arteries</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="reveal">
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:1rem;">🧠 Trust Your Instincts</h3>
+      <p>Taste, smell, and texture are biological screening tools refined over millions of years. Bitterness is a warning signal for plant toxins. Repulsion to certain foods is your body's ancient defense system. Trust it.</p>
+    </div>
+
+    <div class="card card-warning reveal">
+      <h4>If Natural Food Doesn't Taste Good — Two Possibilities:</h4>
+      <ol>
+        <li><strong>Quality is poor:</strong> Factory-farmed meat from stressed, grain-fed animals tastes fundamentally different from pasture-raised, grass-finished meat. The animal's health directly affects the taste and nutritional profile of its meat.</li>
+        <li><strong>Your palate has been hijacked:</strong> <span class="term" data-def="Engineered foods designed to maximize pleasure response beyond anything found in nature. Combine sugar, salt, fat, and artificial flavors to override natural satiety signals.">Hyperpalatable</span> processed foods (engineered combinations of sugar, salt, and industrial fat) hijack <span class="term" data-def="A neurotransmitter that drives reward-seeking behavior. Processed foods trigger unnaturally high dopamine spikes, desensitizing receptors and making natural foods taste bland by comparison.">dopamine</span> pathways in the brain, desensitizing receptors and making natural foods taste bland by comparison. <strong>This is reversible</strong> — 2–4 weeks of whole-food eating resets taste perception.</li>
+      </ol>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="reveal">
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:1.5rem;">📋 The 10 Practical Steps</h3>
+    </div>
+
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step-content">
+          <h4>Eliminate Seed Oils Entirely</h4>
+          <p>Use ghee, tallow, and butter for all cooking. Check every label — seed oils are in almost all processed and restaurant food.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Stop Rationalising Junk Food</h4>
+          <p>There is no safe dose of seed oils, artificial additives, or refined sugar. "A little bit" is how chronic damage accumulates.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Build Diet Around Animal Foods</h4>
+          <p>Beef, lamb, fish, eggs, and dairy should form the foundation of every meal. These are the most nutrient-dense foods available.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Incorporate Organ Meats</h4>
+          <p>100–150g of liver per week from grass-fed cows. Add heart and kidney if possible. Nature's multivitamin.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Get Daily Sun Exposure</h4>
+          <p>30 minutes with legs exposed. Morning sun within the first hour of waking. No sunglasses during morning light exposure.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Prioritise Quality</h4>
+          <p>Grass-fed, wild-caught, pasture-raised. The animal's health determines the nutrient quality of its meat.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Cook Gently</h4>
+          <p>Rare or medium-rare meat, soft-boiled eggs, gentle steaming. Avoid charring, deep-frying, and prolonged high heat.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Trust Your Senses</h4>
+          <p>Bitter, harsh, or repulsive taste is a warning signal from millions of years of evolution. Don't override it.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Reconsider Fibre Dogma</h4>
+          <p>If reducing fibre intake helps your digestion, you don't have a deficiency — you've removed an irritant.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-content">
+          <h4>Be Sceptical of Profiting Industries</h4>
+          <p>Food, supplement, and pharmaceutical industries all profit from your poor health and confusion. Follow the money.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONCLUSION ==================== -->
+<section id="conclusion">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Conclusion</div>
+      <h2 class="section-heading">🔥 The Path Forward Is Ancient</h2>
+    </div>
+
+    <div class="card card-accent reveal">
+      <p>Mitigating an unhealthy lifestyle isn't about hacks, superfoods, or pills. It's about returning to the <strong>biological contract</strong> that sustained human health for three million years.</p>
+      <blockquote>"Eat real, whole, nutrient-dense animal foods. Get daily sunlight. Cook gently. Avoid what your body rejects. Stop poisoning yourself in small, socially acceptable doses and calling it balance."</blockquote>
+      <p>Your body is not fragile. It is <strong>extraordinarily resilient</strong>, capable of remarkable repair and regeneration — but only when given the proper materials and freed from substances it was never designed to process.</p>
+      <p class="mb-0">The path forward is not complicated. <strong>It is ancient.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== COUNTER-ARGUMENTS ==================== -->
+<section id="counter-arguments">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Chapter 9</div>
+      <h2 class="section-heading">🛡️ Addressing Counter-Arguments</h2>
+      <div class="feature-box feature-box-compact reveal">
+        <p>"No argument is complete without confronting its strongest objections. Below are the most common criticisms of ancestral animal-based nutrition and why they fail under scrutiny."</p>
+      </div>
+    </div>
+
+    <div class="counter-grid">
+      <!-- Blue Zone - Blue (Lifestyle) -->
+      <div class="counter-card counter-card-blue reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">🌀</span>
+          <h4>Blue Zone Populations</h4>
+        </div>
+        <div class="objection-box">
+          "Blue Zones eat mostly plants and live longest."
+        </div>
+        <ul class="rebuttal-list">
+          <li><strong>Misrepresented:</strong> They consume significant animal foods (fish, pork, cheese) as staples.</li>
+          <li><strong>Pension Fraud:</strong> Longevity data is often inflated due to unreported deaths for pension collection.</li>
+          <li><strong>Confounding Variables:</strong> Social bonds, movement, and low stress dominate their health outcomes.</li>
+        </ul>
+      </div>
+
+      <!-- Red Meat - Red (Health) -->
+      <div class="counter-card counter-card-red reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">⚡</span>
+          <h4>Red Meat & Cancer</h4>
+        </div>
+        <div class="objection-box">
+          "WHO/IARC classification of processed meat as carcinogenic."
+        </div>
+        <ul class="rebuttal-list">
+          <li><strong>Unreliable Data:</strong> Based on self-reported questionnaires prone to massive recall bias.</li>
+          <li><strong>Healthy User Bias:</strong> Studies fail to isolate meat from seed oils and refined carbs.</li>
+          <li><strong>Processing Risk:</strong> Actual risk comes from industrial additives and charring, not the meat itself.</li>
+        </ul>
+      </div>
+
+      <!-- Saturated Fat - Red (Health) -->
+      <div class="counter-card counter-card-red reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">🫀</span>
+          <h4>Saturated Fat & Cholesterol</h4>
+        </div>
+        <div class="objection-box">
+          "Saturated fat clogs your arteries and raises cholesterol, leading to heart disease."
+        </div>
+        <ul class="rebuttal-list">
+          <li><strong>Failed Hypothesis:</strong> Decades of data and massive meta-analyses have repeatedly failed to prove a direct link between saturated fat intake and heart disease.</li>
+          <li><strong>Particle Quality:</strong> Saturated fat raises "Large Fluffy" (Pattern A) LDL, which is benign; the dangerous "Small Dense" LDL is actually driven by sugar and seed oils.</li>
+          <li><strong>Hormone Foundation:</strong> You <em>want</em> cholesterol; it is the mandatory building block for all steroid hormones. Without it, you cannot produce <strong>Testosterone</strong> (Male), <strong>Estrogen & Progesterone</strong> (Female), or <strong>Cortisol</strong>. These hormones are <strong>critically important</strong> for vitality, mood, and reproduction. Blaming cholesterol for heart disease is like blaming firemen for the fire they are trying to put out.</li>
+        </ul>
+      </div>
+
+      <!-- Mediterranean - Red (Health) -->
+      <div class="counter-card counter-card-red reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">🌿</span>
+          <h4>Mediterranean Diet</h4>
+        </div>
+        <div class="objection-box">
+          "RCTs show cardiovascular benefits from olive oil and plant-heavy traditional diets."
+        </div>
+        <ul class="rebuttal-list">
+          <li><strong>The Baseline Fallacy:</strong> Major trials (PREDIMED, Lyon Diet Heart) compare the Mediterranean diet to a standard Western diet. Beating a baseline of seed oils and processed sugar doesn't prove olive oil is optimal; it only proves it is less toxic than industrial waste.</li>
+          <li><strong>Biological Feedback:</strong> High-quality EVOO is naturally bitter and peppery because of <em>oleocanthal</em>, which triggers the same irritant receptors as ibuprofen. This bitterness is a mild biological warning signal. Animal fats like ghee are immediately palatable and satisfying alone.</li>
+          <li><strong>Omega-6 Burden:</strong> Olive oil contains ~8–10% linoleic acid (omega-6), while butter contains only ~2–3%. In a framework where excess linoleic acid drives systemic inflammation, animal fats remain the superior choice for cellular integrity.</li>
+          <li><strong>Confounding Variables:</strong> Mediterranean health is driven by abundant sunlight, high activity, and low stress—not by the specific inclusion of plant oils.</li>
+        </ul>
+      </div>
+
+      <!-- Life Expectancy - Blue (Historical) -->
+      <div class="counter-card counter-card-blue reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">⏳</span>
+          <h4>Life Expectancy</h4>
+        </div>
+        <div class="objection-box">
+          "Average 30–40 years; ancestral diet can’t be optimal."
+        </div>
+        <ul class="rebuttal-list">
+          <li><strong>Skewed Averages:</strong> Dragged down by high infant mortality and physical trauma, not diet.</li>
+          <li><strong>Robust Adults:</strong> Survivors routinely reached 60–100+ with zero metabolic disease.</li>
+          <li><strong>Healthspan:</strong> They were dramatically healthier while alive than modern medicated populations.</li>
+        </ul>
+      </div>
+
+      <!-- Environment - Green (Environment) -->
+      <div class="counter-card counter-card-green reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">🌱</span>
+          <h4>Environmental Concerns</h4>
+        </div>
+        <div class="objection-box">
+          "Meat production destroys the environment."
+        </div>
+        <ul class="rebuttal-list">
+          <li><strong>Regenerative Loop:</strong> Properly managed grazing creates a closed carbon cycle.</li>
+          <li><strong>Soil Restoration:</strong> Ruminants build topsoil and enhance biodiversity unlike monoculture crops.</li>
+          <li><strong>Industrial vs Nature:</strong> The problem is industrial farming systems, not the animals themselves.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="counter-cta reveal">
+      <p>All objections in one place — your complete reference.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DISCUSSION ==================== -->
+<section id="discussion">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Interactive</div>
+      <h2 class="section-heading">💬 Class Discussion</h2>
+      <p class="section-intro">We’ve presented our case for ancestral nutrition. Now, we want to hear your thoughts. Let’s discuss the biological mismatch of the modern world.</p>
+    </div>
+
+    <div class="counter-grid">
+      <!-- Question 1 -->
+      <div class="counter-card counter-card-blue reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">🤔</span>
+          <h4>The Belief Challenge</h4>
+        </div>
+        <p class="mb-0">We’ve all been told for decades that things like red meat and saturated fat are dangerous. After seeing the evidence today, <strong>what is one "fact" about healthy eating that you now feel skeptical about?</strong></p>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="counter-card counter-card-red reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">🏗️</span>
+          <h4>The Practicality Gap</h4>
+        </div>
+        <p class="mb-0">We’ve presented a very direct argument for returning to ancestral habits. <strong>Which part of this lifestyle do you think is the hardest to follow in the modern world, and why?</strong></p>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="counter-card counter-card-blue reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">⚖️</span>
+          <h4>Critical Thinking</h4>
+        </div>
+        <p class="mb-0">No argument is perfect. <strong>Is there any specific part of our presentation that you strongly disagree with or find hard to believe?</strong> Let’s hear your counter-arguments.</p>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="counter-card counter-card-green reveal">
+        <div class="counter-header">
+          <span class="counter-card-icon">🚀</span>
+          <h4>The 30-Day Takeaway</h4>
+        </div>
+        <p class="mb-0">If you had to pick just one thing from our presentation to try for 30 days—<strong>what would it be and what result would you hope to see?</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GLOSSARY ==================== -->
+<section id="glossary">
+  <div class="container">
+    <div class="reveal">
+      <div class="chapter-label">Reference</div>
+      <h2 class="section-heading">📖 Glossary</h2>
+      <p class="section-intro">Definitions for all technical terms used throughout this guide.</p>
+    </div>
+
+    <div class="glossary-grid reveal">
+      <div class="glossary-item">
+        <div class="glossary-term">LD50</div>
+        <p class="glossary-def">Lethal Dose 50% — the dose of a substance required to kill 50% of a test population. The standard measure of acute toxicity. Lower LD50 = more toxic.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Bioavailability</div>
+        <p class="glossary-def">The proportion of a nutrient that is absorbed from the diet and used for normal body functions. Animal-source nutrients generally have far higher bioavailability than plant-source equivalents.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Beta-glycosidic Bond</div>
+        <p class="glossary-def">A chemical bond linking glucose molecules in a configuration that human digestive enzymes cannot recognize or break. Found in cellulose and other plant structural carbohydrates.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Alpha-glycosidic Bond</div>
+        <p class="glossary-def">A chemical bond linking glucose molecules in a configuration that human digestive enzymes CAN recognize and break. Found in starch and glycogen.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Fermentation</div>
+        <p class="glossary-def">Metabolic process where microorganisms break down organic substances. In the gut, bacterial fermentation of undigested fibre produces gases and short-chain fatty acids.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Phytates (Phytic Acid)</div>
+        <p class="glossary-def">The storage form of phosphorus in plants. Strongly binds to minerals (iron, zinc, calcium, magnesium), forming insoluble complexes that the human body cannot absorb.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Oxalates</div>
+        <p class="glossary-def">Organic acids found in many plants (spinach, rhubarb, beets) that bind calcium and other minerals, forming insoluble crystals. Can accumulate in kidneys as kidney stones.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Glycoalkaloids</div>
+        <p class="glossary-def">Toxic nitrogen-containing compounds found in nightshade plants (potatoes, tomatoes, eggplant). Heat-stable — not fully destroyed by cooking. Include solanine and chaconine.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Lectins</div>
+        <p class="glossary-def">Carbohydrate-binding proteins found in many plants, especially legumes and grains. Can bind to intestinal lining, cause agglutination of red blood cells, and trigger immune responses.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Heme Iron</div>
+        <p class="glossary-def">The form of iron found in animal blood and muscle tissue. 15-35% absorbed vs 2-20% for non-heme plant iron. The most bioavailable iron source in the human diet.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Goitrogens</div>
+        <p class="glossary-def">Substances that suppress thyroid function by interfering with iodine uptake or thyroid hormone synthesis. Found in cruciferous vegetables and soy.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Glucosinolates</div>
+        <p class="glossary-def">Sulfur-containing compounds in cruciferous vegetables that can interfere with thyroid hormone synthesis by inhibiting iodine uptake.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Phytoestrogens</div>
+        <p class="glossary-def">Plant-derived compounds that mimic estrogen in the body. Can disrupt hormonal balance, affect fertility, and interfere with endocrine function. Found in soy and flaxseed.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Cyanogenic Glycosides</div>
+        <p class="glossary-def">Plant compounds that release hydrogen cyanide (HCN) when plant tissue is damaged. Found in cassava, bamboo shoots, and lima beans. Can cause convulsions and death.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Saponins</div>
+        <p class="glossary-def">Plant glycosides that produce foam when dissolved in water. Can disrupt cell membranes and lyse (destroy) red blood cells. Found in legumes and quinoa.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Hyperpalatable</div>
+        <p class="glossary-def">Engineered foods designed to maximize pleasure response beyond anything found in nature. Combine sugar, salt, fat, and artificial flavors to override natural satiety signals.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">FODMAPs</div>
+        <p class="glossary-def">Fermentable Oligosaccharides, Disaccharides, Monosaccharides And Polyols — short-chain carbohydrates poorly absorbed in the small intestine, causing digestive distress.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">IBS</div>
+        <p class="glossary-def">Irritable Bowel Syndrome — a chronic functional GI disorder characterized by abdominal pain, bloating, and altered bowel habits. Often worsened by high-fibre diets.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Retinol</div>
+        <p class="glossary-def">The active, preformed version of vitamin A found only in animal foods (liver, eggs, dairy). Immediately usable by the body, unlike beta-carotene from plants.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">CoQ10</div>
+        <p class="glossary-def">Coenzyme Q10 — essential for mitochondrial energy production. Concentrated in heart muscle. Levels decline with age and statin drug use.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Methylation</div>
+        <p class="glossary-def">A biochemical process involving the transfer of methyl groups. Essential for DNA synthesis and repair, detoxification, neurotransmitter production, and gene expression regulation.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">EPA/DHA</div>
+        <p class="glossary-def">Eicosapentaenoic acid and Docosahexaenoic acid — long-chain omega-3 fatty acids found primarily in fish and seafood. Essential for brain, heart, and immune function.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Haemolysis</div>
+        <p class="glossary-def">The rupturing of red blood cells, releasing hemoglobin into the bloodstream. Can be caused by saponins, certain toxins, and other membrane-disrupting compounds.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Cytotoxicity</div>
+        <p class="glossary-def">The quality of being toxic to cells. Cytotoxic substances can damage or kill cells through various mechanisms including membrane disruption and mitochondrial damage.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Chelation</div>
+        <p class="glossary-def">The process by which a molecule binds to a metal ion, forming a complex. Phytates and oxalates chelate essential minerals, preventing their absorption.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Hyperkalemia</div>
+        <p class="glossary-def">Dangerously elevated potassium levels in the blood. Can cause cardiac arrhythmias and cardiac arrest. Risk factor with potassium supplementation.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Half-life</div>
+        <p class="glossary-def">The time required for half of a substance to be eliminated from the body. Longer half-life means greater accumulation risk with repeated exposure.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Seed Oils</div>
+        <p class="glossary-def">Oils extracted from plant seeds using industrial processes (hexane solvent, high heat, chemical deodorization). Includes soybean, canola, sunflower, corn, and cottonseed oils.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Acrylamide</div>
+        <p class="glossary-def">A chemical compound formed when starchy foods are heated above ~120°C through the Maillard reaction. IARC Group 2A probable carcinogen. Also a confirmed neurotoxin.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Maillard Reaction</div>
+        <p class="glossary-def">A chemical reaction between amino acids and reducing sugars at high temperatures. Responsible for browning and flavor development — but also acrylamide formation.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Glycidamide</div>
+        <p class="glossary-def">A metabolite of acrylamide formed in the body. More reactive than acrylamide — binds directly to DNA forming adducts that can cause mutations.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Circadian Rhythm</div>
+        <p class="glossary-def">The ~24-hour internal clock governing sleep-wake cycles, hormone release, body temperature, and metabolism. Synchronized primarily by light exposure through the eyes.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Linoleic Acid</div>
+        <p class="glossary-def">An omega-6 polyunsaturated fatty acid (18:2n-6). The primary fatty acid in seed oils. Incorporates into cell membranes and drives chronic inflammation when consumed in excess.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Ruminant</div>
+        <p class="glossary-def">An animal with a specialized four-chamber stomach (rumen, reticulum, omasum, abomasum) that ferments plant matter before digestion. Includes cattle, sheep, goats, bison, and deer.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Saturated Fat</div>
+        <p class="glossary-def">A fatty acid with no double bonds in its carbon chain. All carbon atoms are "saturated" with hydrogen. Straight chain, packs tightly, solid at room temperature, highly resistant to oxidation.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Monounsaturated Fat</div>
+        <p class="glossary-def">A fatty acid with one double bond in its carbon chain, creating a single kink. Liquid at room temperature, moderately stable. Found in olive oil, avocados, and animal fats.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Polyunsaturated Fat (PUFA)</div>
+        <p class="glossary-def">A fatty acid with multiple double bonds, creating multiple kinks. Always liquid, highly prone to oxidation and rancidity. Dominant in industrial seed oils. Includes omega-6 and omega-3 fats.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Oxidation</div>
+        <p class="glossary-def">A chemical reaction where a substance loses electrons, often by reacting with oxygen. In fats, oxidation creates toxic aldehydes and other harmful compounds. PUFAs are most vulnerable.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Cortisol</div>
+        <p class="glossary-def">A steroid hormone produced by the adrenal glands. Follows a circadian pattern — peaks in early morning for alertness, declines throughout the day. Chronic elevation drives inflammation and metabolic dysfunction.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Melatonin</div>
+        <p class="glossary-def">A hormone produced by the pineal gland in response to darkness. Regulates sleep-wake cycles, has antioxidant properties. Production is suppressed by light exposure, especially blue light at night.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Glymphatic System</div>
+        <p class="glossary-def">A macroscopic waste clearance system that utilizes a unique system of perivascular tunnels to promote efficient elimination of soluble proteins and metabolites from the central nervous system.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Xenoestrogens</div>
+        <p class="glossary-def">Endocrine-disrupting chemicals found in plastics (like BPA and phthalates) that mimic estrogen in the body.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Adenosine</div>
+        <p class="glossary-def">A chemical in the brain that builds up during the day to signal sleepiness. Caffeine blocks adenosine receptors, preventing this signal.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Neurotoxin</div>
+        <p class="glossary-def">A chemical that interferes with the normal function of the nervous system. Caffeine acts as a neurotoxin by blocking adenosine receptors.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Collagen</div>
+        <p class="glossary-def">The main structural protein in the extracellular matrix found in the body's various connective tissues. Abundant in bone broth and skin.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Glycine</div>
+        <p class="glossary-def">An amino acid that acts as a neurotransmitter and is a key component of collagen. Supports sleep, liver detox, and gut health.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Autophagy</div>
+        <p class="glossary-def">The body's way of cleaning out damaged cells, in order to regenerate newer, healthier cells. Triggered by fasting.</p>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Metabolic Flexibility</div>
+        <p class="glossary-def">The capacity for the organism to adapt fuel oxidation to fuel availability. The ability to switch between burning carbs and fat efficiently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <p>Primal Nutrition — Return to Ancestral Eating</p>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // ========== THEME TOGGLE ==========
+  const html = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = 'light';
+  html.setAttribute('data-theme', savedTheme);
+  themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+  themeToggle.addEventListener('click', function() {
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    themeToggle.textContent = next === 'dark' ? '🌙' : '☀️';
+  });
+
+  // ========== HAMBURGER MENU ==========
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', function() {
+    const open = navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(open));
+  });
+
+  // Close menu when clicking a link
+  navLinks.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // ========== SCROLL PROGRESS BAR ==========
+  const scrollProgress = document.getElementById('scroll-progress');
+
+  function updateScrollProgress() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    scrollProgress.style.width = progress + '%';
+  }
+
+  // ========== BACK TO TOP ==========
+  const backToTop = document.getElementById('backToTop');
+
+  function updateBackToTop() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > 600) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  }
+
+  // ========== TOOLTIPS ==========
+  const tooltip = document.createElement('div');
+  tooltip.className = 'tooltip-element';
+  document.body.appendChild(tooltip);
+
+  document.querySelectorAll('.term').forEach(term => {
+    term.addEventListener('mouseenter', () => {
+      tooltip.textContent = term.getAttribute('data-def');
+      tooltip.style.opacity = '1';
+
+      const rect = term.getBoundingClientRect();
+      tooltip.style.left = `${rect.left + rect.width / 2}px`;
+      tooltip.style.top = `${rect.top - 12}px`;
+      tooltip.style.transform = 'translate(-50%, -100%) scale(1)';
+    });
+
+    term.addEventListener('mouseleave', () => {
+      tooltip.style.opacity = '0';
+      tooltip.style.transform = 'translate(-50%, -90%) scale(0.95)';
+    });
+  });
+
+  // ========== ACCORDION ANIMATION FIX ==========
+  // The grid-template-rows animation works well, but sometimes the browser needs a nudge
+  // to recalculate the height correctly on subsequent opens.
+  document.querySelectorAll('details').forEach((detail) => {
+    detail.addEventListener('toggle', (e) => {
+      if (detail.open) {
+        // Force a reflow to ensure animation plays
+        const content = detail.querySelector('.details-content');
+        content.style.gridTemplateRows = '0fr';
+        requestAnimationFrame(() => {
+          content.style.gridTemplateRows = '1fr';
+        });
+      }
+    });
+
+    // Prevent default toggle behavior to handle it manually for smoother animation if needed
+    // But for now, the CSS grid transition is usually sufficient if implemented correctly.
+    // The issue described "open once smoothly then instantly" often happens because
+    // the 'open' attribute is removed instantly on close, but added instantly on open.
+    // The CSS transition handles the visual part.
+
+    // Let's try a more robust JS approach for the animation to ensure it always plays
+    const summary = detail.querySelector('summary');
+    const content = detail.querySelector('.details-content');
+
+    summary.addEventListener('click', (e) => {
+      e.preventDefault(); // Stop default behavior
+
+      if (detail.open) {
+        // Closing
+        content.style.gridTemplateRows = '0fr';
+        // Wait for animation to finish before removing 'open' attribute
+        // Increased timeout slightly to ensure transition completes fully
+        setTimeout(() => {
+          detail.open = false;
+        }, 450); // Match transition duration + buffer
+      } else {
+        // Opening
+        detail.open = true;
+        // Small delay to allow browser to render the 'open' state before animating
+        requestAnimationFrame(() => {
+          content.style.gridTemplateRows = '1fr';
+        });
+      }
+    });
+  });
+
+  // ========== SCROLL REVEAL (INTERSECTION OBSERVER) ==========
+  const revealOptions = {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        // If it's a container with children, stagger them
+        if (entry.target.classList.contains('stats') || entry.target.classList.contains('fat-cards')) {
+          const children = entry.target.children;
+          Array.from(children).forEach((child, index) => {
+            setTimeout(() => {
+              child.style.opacity = '1';
+              child.style.transform = 'translateY(0)';
+            }, index * 100);
+          });
+        }
+      }
+    });
+  }, revealOptions);
+
+  document.querySelectorAll('.reveal, .stats, .fat-cards').forEach(el => {
+    revealObserver.observe(el);
+    if (el.classList.contains('stats') || el.classList.contains('fat-cards')) {
+      Array.from(el.children).forEach(child => {
+        child.style.opacity = '0';
+        child.style.transform = 'translateY(30px)';
+        child.style.transition = 'all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)';
+      });
+    }
+  });
+
+  // ========== MAGNETIC EFFECT FOR BUTTONS ==========
+  document.querySelectorAll('.theme-toggle, .back-to-top, .nav-links a').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+    });
+  });
+
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ========== SCROLL EVENT (debounced via rAF) ==========
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        updateScrollProgress();
+        updateBackToTop();
+        onScrollSpy();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // ========== ACTIVE NAV (Scroll Spy) ==========
+  const sections = document.querySelectorAll('section[id]');
+  const navLinkItems = document.querySelectorAll('.nav-links a');
+  const navIndicator = document.getElementById('navIndicator');
+  const navList = document.querySelector('.nav-links');
+
+  function updateNavIndicator(element) {
+    if (!element || window.innerWidth <= 1280) {
+      navIndicator.style.opacity = '0';
+      return;
+    }
+
+    const rect = element.getBoundingClientRect();
+    const parentRect = navList.getBoundingClientRect();
+
+    // Use transform for performant animation
+    navIndicator.style.width = `${rect.width}px`;
+    navIndicator.style.height = `${rect.height}px`;
+    // Calculate position relative to the parent container
+    const left = rect.left - parentRect.left;
+    const top = rect.top - parentRect.top;
+
+    navIndicator.style.transform = `translate(${left}px, ${top}px)`;
+    navIndicator.style.opacity = '1';
+  }
+
+  function onScrollSpy() {
+    const scrollPos = window.scrollY + 100; // Offset for header
+    let currentSectionId = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+    // If at the very bottom, highlight the last section
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+       const lastSection = sections[sections.length - 1];
+       if (lastSection) currentSectionId = lastSection.getAttribute('id');
+    }
+
+    navLinkItems.forEach(link => {
+      if (link.getAttribute('href') === '#' + currentSectionId) {
+        if (!link.classList.contains('active')) {
+          navLinkItems.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+          if (window.innerWidth > 1280) updateNavIndicator(link);
+        }
+      }
+    });
+  }
+
+  // Initial call
+  onScrollSpy();
+
+  // Handle hover effects for the indicator
+  navLinkItems.forEach(link => {
+    link.addEventListener('mouseenter', (e) => {
+      if (window.innerWidth > 1280) {
+        updateNavIndicator(e.target);
+      }
+    });
+  });
+
+  navList.addEventListener('mouseleave', () => {
+    if (window.innerWidth > 1280) {
+      const activeLink = document.querySelector('.nav-links a.active');
+      if (activeLink) {
+        updateNavIndicator(activeLink);
+      } else {
+        navIndicator.style.opacity = '0';
+      }
+    }
+  });
+
+  // Update on resize
+  window.addEventListener('resize', () => {
+    onScrollSpy();
+  });
+
+  // Initial calls
+  updateScrollProgress();
+  updateBackToTop();
+})();
+</script>
+</body>
+</html>

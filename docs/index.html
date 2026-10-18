@@ -1,48 +1,68 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="Deine Lernräume für die Schule. Themen verstehen, Aufgaben ausprobieren und in deinem Tempo üben.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
   <title>Lernräume · Deine Themen. Dein Tempo.</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css">
+  <script src="theme.js" defer></script>
+  <script src="directory.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#lernraeume">Zu den Lernräumen</a>
   <div class="page">
     <header class="header">
       <a class="brand" href="./" aria-label="Lernräume, Startseite"><span class="brand-mark" aria-hidden="true">L.</span>Lernräume</a>
-      <span class="header-note">Platz zum Verstehen.</span>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="true" aria-label="Dunkles Erscheinungsbild aktivieren" hidden>
+        <span class="theme-toggle-icons" aria-hidden="true">
+          <svg class="theme-toggle-icon theme-toggle-sun" width="22" height="22"><use href="theme-icons.svg#icon-sun"></use></svg>
+          <svg class="theme-toggle-icon theme-toggle-moon" width="22" height="22"><use href="theme-icons.svg#icon-moon"></use></svg>
+        </span>
+      </button>
     </header>
     <main>
       <section class="intro" aria-labelledby="title">
-        <p class="eyebrow">Dein Lernplatz</p>
         <h1 id="title">Deine Themen.<br> <span>Dein Tempo.</span></h1>
         <p class="intro-text">Ein Thema öffnen, Zusammenhänge verstehen und selbst ausprobieren. So oft du möchtest.</p>
       </section>
       <section class="collection" id="lernraeume" aria-labelledby="collection-title">
-        <div class="collection-heading"><h2 id="collection-title">Lernräume</h2><span>01</span></div>
-        <!-- Add one ordinary link here for each reviewed HTML in exercises/. -->
-        <a class="exercise" href="exercises/pug-lernraum.html">
+        <div class="collection-heading"><h2 id="collection-title">Lernräume</h2><span>02</span></div>
+        <div class="directory-controls" id="directory-controls" hidden>
+          <div class="search-control"><label for="exercise-search">Lernraum suchen</label><input type="search" id="exercise-search" placeholder="Name eingeben" autocomplete="off" spellcheck="false" aria-controls="exercise-grid"></div>
+        </div>
+        <!-- Add reviewed exercises with data-added set to their original ISO 8601 addition time, newest first. -->
+        <div class="exercise-grid" id="exercise-grid">
+        <a class="exercise" href="exercises/pug-lernraum.html" data-added="2026-10-18T18:47:00+02:00">
           <span class="subject-mark" aria-hidden="true">PuG</span>
           <span class="exercise-copy">
             <span class="subject">Politik und Gesellschaft</span>
-            <h3>Politik verstehen.<br> Schritt für Schritt.</h3>
+            <h3>Politik verstehen. Schritt für Schritt.</h3>
             <span class="description">Von Demokratie bis Grundrechte: erst verstehen, dann an Beispielen üben und selbst lösen.</span>
             <span class="details">10 Themen <span aria-hidden="true">/</span> 50 Beispiele <span aria-hidden="true">/</span> 50 Aufgaben</span>
+            <span class="card-date">Für den <time datetime="2027-10-19">19.10.2027</time></span>
           </span>
-          <span class="open">Lernraum öffnen <span class="arrow" aria-hidden="true">↗</span></span>
+          <span class="open">Öffnen <span class="arrow" aria-hidden="true">↗</span></span>
         </a>
+        <!-- Relative ordering seed: user says Primal predates PuG; exact original date is unknown. -->
+        <a class="exercise" href="exercises/primal-1.html" data-added="2026-10-18T18:46:59+02:00">
+          <span class="subject-mark" aria-hidden="true">PN</span>
+          <span class="exercise-copy">
+            <span class="subject">Ernährung</span>
+            <h3>Primal Nutrition</h3>
+            <span class="description">Englische Lernseite zu Ernährung, Evolution und Lebensstil.</span>
+            <span class="details">Englisch <span aria-hidden="true">/</span> Lesetexte und Schaubilder</span>
+          </span>
+          <span class="open">Öffnen <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+        </div>
+        <p id="search-empty" class="search-empty" hidden>Kein Lernraum gefunden. Versuche einen anderen Namen.</p>
+        <p id="search-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
       </section>
-      <aside class="session-note" aria-label="Hinweis zum Lernstand">
-        <span class="note-mark" aria-hidden="true">↺</span>
-        <div><h2>Jedes Mal ein frischer Start.</h2><p>Deine Antworten und dein Fortschritt werden nicht gespeichert. Beim Neuladen beginnst du neu.</p></div>
-      </aside>
     </main>
-    <footer><span>Ohne Anmeldung. Einfach lernen.</span><span>Für Handy, Tablet &amp; Computer.</span></footer>
   </div>
 </body>
 </html>

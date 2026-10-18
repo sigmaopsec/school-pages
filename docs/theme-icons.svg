@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2.75v1.5M12 19.75v1.5M4.25 12h-1.5M21.25 12h-1.5M5.1 5.1l1.06 1.06M17.84 17.84l1.06 1.06M18.9 5.1l-1.06 1.06M6.16 17.84L5.1 18.9"/>
+  </symbol>
+<symbol id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.25 15.12A8.5 8.5 0 0 1 8.88 3.75a8.5 8.5 0 1 0 11.37 11.37Z"/>
+  </symbol>
+</svg>
