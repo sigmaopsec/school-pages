@@ -1,0 +1,8 @@
+# Keep supplied originals private and out of the published site.
+/inbox/*
+!/inbox/.gitkeep
+/*.html
+/output/
+/.playwright-cli/
+/node_modules/
+.DS_Store
