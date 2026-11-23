@@ -14,6 +14,8 @@
 
 ## Publishing
 
-- Target `sigmaopsec/school-pages` using `gh-2`; verify the active user before GitHub writes. Never fall back to the primary `gh` account.
+- Use `/home/opsec/.local/bin/gh-2` (config: `~/.config/gh-2`) for GitHub operations; never fall back to `gh`.
+- Before GitHub writes, verify `gh-2 api user --jq .login` = `sigmaopsec`. Login: `gh-2 auth login --hostname github.com --web --git-protocol https`.
+- Target `sigmaopsec/school-pages`; origin: `https://github.com/sigmaopsec/school-pages.git`. Leave private `levi-cm/school-pages` untouched.
 - Pages serves `main:/docs` at `https://sigmaopsec.github.io/school-pages/`.
 - Keep Git authentication and author identity local to this repository.
