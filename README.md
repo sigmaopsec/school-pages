@@ -70,3 +70,11 @@ Preparation for the 26.10.2026 short exam, updated from `Stilmittel-Akademie-Pru
 Browser persistence, progress import/export, archive controls and answer downloads removed. Answers, drafts, settings and theme remain in memory until reload. Relative return link, restrictive CSP and mobile/touch adjustments retained.
 
 Chromium and WebKit passed at 320, 390, 768 and 1440px: directory → exercise → answer/check, writing, profile changes, both mock variants with answer/submission/results, reload reset and return. Ten main views fit each width; no JavaScript errors, storage calls, cookies or automatic external requests. Browser emulation does not constitute physical-device testing.
+
+## Informatik · modellraum (2026-11-23)
+
+Databases and ERM practice (Informatik 12): learning lab, cardinality drills, the classroom worksheet tasks as reading versions, an ERM workshop, relational-model training, a paper exam round and a mock exam. Reviewed page: `docs/exercises/modellraum-unterricht.html`; the supplied original stays in ignored `inbox/`. Addition timestamp `2026-11-23T09:23:13+01:00`; no exam date known, so the card shows none.
+
+Public edition: all embedded original PDFs and page scans are removed, so no school, teacher or worksheet originals are published. Only two cropped faulty diagrams from sheets 06 and 08 remain, because tasks depend on them. Browser storage, backup/import/export and saved-state wording are removed; answers, drafts, notes, exams and theme stay in memory until reload. Added a relative return link, a restrictive CSP, 44px touch targets on phones and touch devices, and a light/dark toggle (light on every load; diagrams stay on light paper).
+
+Chromium and WebKit passed at 320, 390, 768 and 1440px: directory → exercise → cardinality answer/check → dark toggle → reload reset (answers cleared, theme back to light) → return. All twelve views fit each width in light and dark mode; no storage calls, cookies, automatic external requests or JavaScript/console errors. Browser emulation does not constitute physical-device testing.
